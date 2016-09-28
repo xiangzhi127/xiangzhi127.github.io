@@ -137,7 +137,7 @@
       <div class="body-wrap">
         
   
-    <article id="post-php-14MySQL" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-JavaScript-2数据类型" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -147,7 +147,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/12/php-14MySQL/">MySQL数据库</a>
+      <a class="article-title" href="/2016/06/12/JavaScript-2数据类型/">JavaScript-数据类型</a>
     </h1>
   
 
@@ -155,12 +155,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">	</div></pre></td></tr></table></figure>
+        <p>ECMAScript中有5种简单数据类型：Undefined、Null、Boolean、Number和String。还有一种复杂数据类型——Object。<br>1、typeof操作符<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">typeof操作符是用来检测变量的数据类型。</div></pre></td></tr></table></figure></p>
+<p>2、标识符<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">所谓标识符，就是指变量、函数、属性的名字，或者函数的参数。</div><div class="line">标识符可以是下列格式规则组合起来的一或多个字符：</div><div class="line">1、第一字符必须是一个字母、下划线(_)或一个美元符号($)。</div><div class="line">2、其他字符可以是字母、下划线、美元符号或数字。</div><div class="line">3、不能把关键字、保留字、<span class="literal">true</span>、<span class="literal">false</span>和null作为标识符。</div></pre></td></tr></table></figure></p>
+<p>3、注释<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">ECMAScript使用C风格的注释，包括单行注释和块级注释。</div><div class="line">1、// 单行注释</div><div class="line">2、/*</div><div class="line">	* 这是一个多行</div><div class="line">	* 注释</div><div class="line">	*/</div></pre></td></tr></table></figure></p>
+<p>4、直接量(字面量literal)<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">所有直接量(字面量)，就是程序中直接显示出来的数据值。</div><div class="line">1、数字字面量</div><div class="line">2、字符串字面量</div><div class="line">3、布尔值字面量</div><div class="line">4、对象字面量</div><div class="line">5、正则表达式字面量</div><div class="line">6、对象字面量表达式</div><div class="line">7、数组字面量表达式</div></pre></td></tr></table></figure></p>
+
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/06/12/php-14MySQL/" class="archive-article-date">
+      <a href="/2016/06/12/JavaScript-2数据类型/" class="archive-article-date">
   	<time datetime="2016-06-12T07:49:33.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-06-12</time>
 </a>
       
@@ -181,7 +185,7 @@
 
 
   
-    <article id="post-php-15操作MySQL" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-前端优化" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -191,7 +195,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/12/php-15操作MySQL/">php操作mySQL</a>
+      <a class="article-title" href="/2016/06/12/前端优化/">前端优化</a>
     </h1>
   
 
@@ -199,12 +203,32 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">	</div></pre></td></tr></table></figure>
+        <p>1、优化的基本准则<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">按需加载（只加载你需要的）</div><div class="line">并行（让串行的事情并行起来）</div><div class="line">压缩（通过压缩减少体积）</div><div class="line">缓存（利用缓存，减少请求等待）</div><div class="line">预测（预测用户行为，提前发出请求）</div><div class="line">合并（把多个零散文件合并起来，减少请求）</div><div class="line">自动化（让速度优化变成一种常规，和自动化工作（例如glup ,grunt）结合，减少成本）</div></pre></td></tr></table></figure></p>
+<p>2、优化css<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">1、csslink压缩</div><div class="line">2、使用gulp-concat将多个css合并在一起</div><div class="line">3、不要使用@import减少阻塞和请求，可以使用CSS delivery工具检测</div><div class="line">4、如果是移动端，建议head只放首屏能用的css,首屏外的css下移。</div><div class="line">5、检查没有用到的css。</div></pre></td></tr></table></figure></p>
+<p>3、优化JavaScript<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">1、一个变量只存在一种类型的数据</div><div class="line">2、尽量减少对隐式的依赖，这样可以增强程序的可读性</div><div class="line">3、使用匈牙利命名法</div><div class="line">4、在对当前DOM进行操作之前，尽可能多的做一些准备工作，保证N次创建，1次写入</div><div class="line">5、判断空值用val===null即可</div><div class="line">6、运用逻辑与代替<span class="keyword">if</span></div><div class="line">7、避免全局查找，在一个函数中会用到全局对象储存为局部变量来减少全局查找，因为访问局部变量的速度要比访问全局变量的速度跟快些。</div></pre></td></tr></table></figure></p>
+<p>4、减少对服务器的文件请求<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">1、使用css sprite技术合并多个图片为单个图片文件，实际使用时通过background-position来定位背景位置。</div><div class="line">2、合并多个css样式文件为单个样式文件，合并多个脚本为单个脚本，再在页面中引用合并后的样式/脚本文件。</div><div class="line">3、使用base64编码来展示图片，常规上值推荐把这种方式使用在用户重复访问较少的页面，因为他们虽然无须从服务器get一遍，但也无法缓存在客户端，导致用户每次当问页面都要重新渲染页面一次。而且冗长的文件流代码会占用你页面很大的代码空间，维护其页面来估计也会挺心塞。</div><div class="line">4、将小块的css、js代码段直接写在页面上</div></pre></td></tr></table></figure></p>
+<p>5、前端优化—减少文件大小<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">1、压缩样式/脚本文件，可以用glup或grunt来实现这点。</div><div class="line">2、使用Font  Awesome来代替页面上的图标，其原理是使用@font-face让用户下载一个非常小的UI字体包，把页面上用到的图标以字符的形式来显示，从而减少了图片需求和图标文件大小。</div></pre></td></tr></table></figure></p>
+<p>6、前端优化—适度使用CDN<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">1、常规建议是一个站点下只使用同一个可靠、快速的CDN来引入各种所需资源即可。</div></pre></td></tr></table></figure></p>
+<p>7、前端优化—延迟请求、异步加载脚本<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">1、将脚本请求标签放置到&lt;/body&gt;结束标签前，使得页面上的脚本为最后被请求的资源，字让不会阻塞其他页面资源的请求事件。还有就是在script标签上加上defer和async属性。</div><div class="line">2、使用requireJS或seajs</div><div class="line">3、&lt;script async&gt;将会在HTML解析时下载该文件并在下载完成后马上执行&lt;/script&gt;</div><div class="line">   &lt;script defer&gt;将会在HTML解析时下载该文件并在HTML解析完成后执行&lt;/script&gt;</div></pre></td></tr></table></figure></p>
+<p>8、143、前端优化—延迟请求首屏外的文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">“首屏”指的是页面初始化时候的页面内容显示区域，也就是页面一加载，用户就首先看到的区域。类似Lazyload原理。比如加载首屏外的图片：</div></pre></td></tr></table></figure></p>
+<p>9、前端优化工具<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1、Google PageSpeed</div><div class="line">2、雅虎 YSlow</div><div class="line">3、蜘蛛模拟器、图像SEO工具、请求检查器、链接请求器、HTTP头检查、</div></pre></td></tr></table></figure></p>
+<p>10、优化<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line">1、避免坏请求，检查页面中的坏连接非常有必要，你可以通过Google的pageSpeed工具来检测</div><div class="line">2、避免css@import,会导致一个文件加载完才会到加载另一个，并无法并行加载，可以使用CSS delivery工具检测</div><div class="line">3、避免使用document.write，因为会产生一些多余的步骤：下载资源、读取资源、运行javascript来了解需要做些什么。</div><div class="line">4、合并多个外部CSS文件</div><div class="line">5、合并多个外部javascript文件</div><div class="line">6、通过css sprites来整合图像</div><div class="line">7、延迟javascript的加载</div><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">downloadJSAtOnload</span></span>() &#123;</div><div class="line">var element = document.createElement(<span class="string">"script"</span>);</div><div class="line">element.src = <span class="string">"defer.js"</span>;</div><div class="line">document.body.appendChild(element);</div><div class="line">&#125;</div><div class="line"><span class="keyword">if</span> (window.addEventListener)</div><div class="line">window.addEventListener(<span class="string">"load"</span>, downloadJSAtOnload, <span class="literal">false</span>);</div><div class="line"><span class="keyword">else</span> <span class="keyword">if</span> (window.attachEvent)</div><div class="line">window.attachEvent(<span class="string">"onload"</span>, downloadJSAtOnload);</div><div class="line"><span class="keyword">else</span> window.onload = downloadJSAtOnload;</div><div class="line">&lt;/script&gt;</div><div class="line">8、启用压缩/GZIp</div><div class="line">9、启用keep-Alive</div><div class="line">Http采用“请求-应答”模式，当使用普通模式（非keepAlive模式）时，每个请求/应答，客户端和服务端都要建立一个链接，完成之后立即断开连接</div><div class="line">当使用keep-Alinem模式（又称持久连接、连接重用）时，使客户端服务端的连接持续有效，避免了重新建立连接。</div><div class="line">10、将小的css和javascript代码内嵌到HTML中</div><div class="line">11、利用浏览器缓存</div><div class="line">12、压缩CSS代码</div><div class="line">13、尽量减少DNS查询次数</div><div class="line">14、尽量减少重定向</div><div class="line">15、优化样式表和脚本的顺序</div><div class="line">16、避免javascript阻塞渲染，建议删除页面中第一屏内容加载的javascript</div><div class="line">17、缩小原始图像</div><div class="line">18、指定图像尺寸，</div><div class="line">19、使ajax可缓存</div><div class="line">20、延迟加载组件</div><div class="line">21、减少DOM元素数量</div></pre></td></tr></table></figure></p>
+<p>11、提前获取DNS来提升网页加载速度<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">1、DNS预取&lt;link rel=<span class="string">"dns-prefech"</span> href=<span class="string">"//host_name_to_prefetch.com"</span>&gt;</div><div class="line">DNS预取是在用户尝试点击链接钱师徒解析域名。一旦域名被解析，且用户导航到该域名，则不会因DNS查找而导致加载时间变长。如果你的网页的内容来自多个域名，那么这绝对是一个聪明的、能加快页面加载速度的方法。</div></pre></td></tr></table></figure></p>
+<p>、前端优化—其他建议</p>
+<pre><code class="bash">1、不要再css中使用import，它会让一个样式文件去等待另一个样式文件的请求，无形中增加了页面等待时间。
+2、避免页面或者页面文件重定向查找。
+3、减少无效请求
+4、无论你是否决定将脚本放到页尾，但一定要保障脚本放置于样式文件后方。
+5、文件在小于50K的时候，直接读取文件流会比从文件系统中去读取文件来得快些，比如有一张图片，如果它小于50K,我们可以将它转为二进制数据存储在数据库中，页面若要读取该图片则从数据库上来读取。
+6、使用cookie-free domains来存放资源，减少无用cookie传输的网络开销
+7、配置htaccess文件、走Gzip页面压缩形式，并开启keep-alive连接模式等后端解决方案。
+</code></pre>
+
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/06/12/php-15操作MySQL/" class="archive-article-date">
+      <a href="/2016/06/12/前端优化/" class="archive-article-date">
   	<time datetime="2016-06-12T07:49:33.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-06-12</time>
 </a>
       
@@ -225,7 +249,7 @@
 
 
   
-    <article id="post-php-1基本语法" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-前端库-jQuery" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -235,7 +259,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/12/php-1基本语法/">php</a>
+      <a class="article-title" href="/2016/06/12/前端库-jQuery/">jQuery</a>
     </h1>
   
 
@@ -243,26 +267,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1、echo，echo是一个函数。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1、<span class="built_in">echo</span>功能：向浏览器输出字符串。</div><div class="line">2、<span class="built_in">echo</span>返回值：void，无返回值。	</div><div class="line">3、<span class="built_in">echo</span>运行速度上比<span class="built_in">print</span>稍稍快一点。因为<span class="built_in">print</span>有返回值。</div></pre></td></tr></table></figure></p>
-<p>2、print<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">1、<span class="built_in">print</span>功能：向浏览器输出字符串</div><div class="line">2、<span class="built_in">print</span>返回值：整型(<span class="built_in">integer</span>)</div></pre></td></tr></table></figure></p>
-<p>3、printf<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1、<span class="built_in">printf</span>功能：向浏览器输出字符串</div><div class="line">2、<span class="built_in">printf</span>返回值：返回字符串的长度</div><div class="line">3、<span class="built_in">printf</span>可以在浏览器直接输出，而sprintf需要<span class="built_in">echo</span>将它输出。</div></pre></td></tr></table></figure></p>
-<p>4、sprintf<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">1、sprintf功能：将字符串保留在内存中</div><div class="line">2、sprintf返回值：返回字符串</div></pre></td></tr></table></figure></p>
-<p>5、标识符与变量<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">1、标识符可以是任何长度，而且可以由任何字母、数字、下划线组成。</div><div class="line">2、标识符不能以数字开始。</div><div class="line">3、在PHP中，标识符是区分大小写的。</div><div class="line">4、一个变量名称可以与一个函数名称相同</div></pre></td></tr></table></figure></p>
-<p>6、变量的数据类型<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">1、创建变量的时候，通过赋值来确定它的类型。</div><div class="line">2、Integer(整数)、Float(浮点数，也叫Double,双精度)、String(字符串)、Boolean(布尔)、Array(数组)、Object(对象)。</div></pre></td></tr></table></figure></p>
-<p>7、数据类型转换<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1、使用类型转换，可以将一个变量或值转换成另一种类型。</div><div class="line"><span class="variable">$sum</span>=0;</div><div class="line"><span class="variable">$total</span>=(<span class="built_in">float</span>)<span class="variable">$sum</span>;</div></pre></td></tr></table></figure></p>
-<p>8、检测变量<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">1、gettype():检测变量的类型</div><div class="line">2、settype():设置变量的类型</div></pre></td></tr></table></figure></p>
-<p>9、isset()和unset()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">1、isset()：判断一个变量是否存在</div><div class="line">2、<span class="built_in">unset</span>(): 销毁一个变量</div></pre></td></tr></table></figure></p>
-<p>10、empty()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">1、empty()用来判断一个变量的值是否为空，如果为空则为<span class="literal">true</span>否则为<span class="literal">false</span>。换句话说，<span class="string">""</span>、0、<span class="string">"0"</span>、NULL、FALSE、array()、var <span class="variable">$var</span>; 以及没有任何属性的对象都将被认为是空的</div></pre></td></tr></table></figure></p>
-<p>11、类型的测试函数<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">1、is_array()、is_double()、is_float()、is_real()、is_long()、is_int()、is_integer()、is_string()、is_object()、is_resource()、is_null()、is_numeric()</div></pre></td></tr></table></figure></p>
-<p>12、变量数据类型转换<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">1、intval() ：转换成整型 </div><div class="line">2、floatval()：转换成浮点型</div><div class="line">3、strval()：转换成字符串型</div><div class="line">4、注意是整体转换。</div></pre></td></tr></table></figure></p>
-<p>13、常量<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">1、常量通过define()，来定义，常量一旦被定义之后，就不能再次更改。</div><div class="line">define(<span class="string">"TOTAL"</span>,199);</div><div class="line">define(<span class="string">"TOTAL"</span>,200);</div><div class="line">最后一个还是199</div><div class="line">2、变量和常量的另一个差异在于常量只可以保存布尔值、整数、浮点数或字符串数据。这些类型都是标量数据。</div></pre></td></tr></table></figure></p>
-<p>14、访问表单变量<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">	</div></pre></td></tr></table></figure></p>
+        <p>1、JQuery编程的最佳实践<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">1、坚持使用CDN来加载JQuery，使用CDN的好处？？</div><div class="line">2、安全起见，最好还是提供一个本地备份以便在无法从远程CND服务器获取JQuery时网站也能工作。</div><div class="line">3、使用裸协议的URL（也就是说去掉http:或者https:）</div><div class="line">4、如果可能，尽量将你的JavaScript和JQuery代码放到页面底部</div><div class="line">5、如果你想兼容IE678请不要用2.x的版本</div><div class="line">6、如果你同时用了其他js框架（prototype、Zepto）,因为他们也使用了$符号。请用<span class="string">'jQuery'</span>代替，并且调用$.noConflict()保证不会有冲突出现。</div><div class="line">7、jQuery类型的变量最好加个$前缀、使用驼峰命名</div><div class="line">8、缓存变量，DOM遍历是昂贵的，所以尽量将会重复用的元素缓存。</div></pre></td></tr></table></figure></p>
+<p>2、</p>
 
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/06/12/php-1基本语法/" class="archive-article-date">
+      <a href="/2016/06/12/前端库-jQuery/" class="archive-article-date">
   	<time datetime="2016-06-12T07:49:33.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-06-12</time>
 </a>
       
@@ -283,7 +295,7 @@
 
 
   
-    <article id="post-php-2操作符与运算" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-前端搜索引擎优化-seo" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -293,7 +305,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/12/php-2操作符与运算/">php操作符与控制结构</a>
+      <a class="article-title" href="/2016/06/12/前端搜索引擎优化-seo/">seo</a>
     </h1>
   
 
@@ -301,15 +313,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1、双引号<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">1、第一个功能：能将变量解析出来。</div><div class="line"><span class="variable">$name</span>=<span class="string">"abc"</span>;;</div><div class="line"><span class="built_in">echo</span> <span class="string">"His name is <span class="variable">$name</span>"</span>;</div><div class="line">2、第二个功能：解析转义序列。</div><div class="line">3、单引号会按照声明的原样解释，解析字符串时，变量和转义序列都不会进行解析。</div></pre></td></tr></table></figure></p>
-<p>2、操作符<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">操作符是用来对数组和变量进行某种操作运算的符号。</div><div class="line">1、算术操作符</div><div class="line">2、复合赋值操作符</div><div class="line">3、比较运算符</div><div class="line">4、逻辑运算符</div><div class="line">5、三元操作符</div><div class="line"><span class="variable">$grade</span>&gt;=50 ? <span class="string">"Passed"</span> : <span class="string">"Failed"</span>;</div></pre></td></tr></table></figure></p>
-<p>3、控制结构<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">1、<span class="keyword">if</span>条件控制语句</div><div class="line">2、switch语句</div><div class="line">3、<span class="keyword">while</span>循环</div><div class="line">4、<span class="keyword">for</span>循环</div><div class="line">5、<span class="keyword">do</span> <span class="keyword">while</span>循环</div><div class="line">6、如果希望停止一段代码的执行，根据所需要达到的效果不同，可以有3中方法实现：第一种：<span class="built_in">break</span>;  退出循环； 第二种是<span class="built_in">exit</span> ;退出程序  第三种是<span class="built_in">continue</span>;退出当前循环</div></pre></td></tr></table></figure></p>
-
+        
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/06/12/php-2操作符与运算/" class="archive-article-date">
+      <a href="/2016/06/12/前端搜索引擎优化-seo/" class="archive-article-date">
   	<time datetime="2016-06-12T07:49:33.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-06-12</time>
 </a>
       
@@ -330,7 +339,7 @@
 
 
   
-    <article id="post-php-3数学运算" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-前端构建工具-webpack" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -340,7 +349,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/12/php-3数学运算/">php数学运算</a>
+      <a class="article-title" href="/2016/06/12/前端构建工具-webpack/">webpack</a>
     </h1>
   
 
@@ -348,16 +357,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1、数值数据类型<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1、如果计算中包含数值和字符串，字符串会在完成计算之前转换为数值。</div><div class="line">2、函数is_numeric()可以检查作为参数传入的值是否是数值。</div><div class="line">3、函数is_int()和is_float()用于检查具体的数据类型。如果传入一个整数或浮点数，这些函数会返回<span class="literal">true</span>，否则返回<span class="literal">false</span>，即使传入一个有合法数值表示的字符串也会返回<span class="literal">false</span>。也可以强制引擎改变数据类型。这称之为类型强制转换，可以在变量或值前面增加(int)、(<span class="built_in">integer</span>)、(<span class="built_in">float</span>)、(double)或(real)实现，也可以通过使用函数intval()或floatval()来实现。</div></pre></td></tr></table></figure></p>
-<p>2、随机数<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">1、rand():产生一个随机数，一般要加参数，比如：rand(0,10);</div><div class="line">2、mt_rand():同样是产生一个随机数，但是速度更快。</div><div class="line">3、getrandmax()：产生最大值。</div><div class="line">4、mt_getrandmax():产生最大值。</div></pre></td></tr></table></figure></p>
-<p>3、格式化数据<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">1、除了警告、错误等信息外，PHP的大部分输出都是利用<span class="built_in">echo</span>、<span class="built_in">print</span>()和<span class="built_in">printf</span>()之类的函数生成的。这些函数将参数转换成一个字符串，并发给客户端应用程序。</div><div class="line">2、number_format()函数可以把整数和浮点数值转换为一种可读的字符串表示。</div></pre></td></tr></table></figure></p>
-<p>4、数学函数<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">1、abs() 绝对值</div><div class="line">2、floor() 舍去法取整</div><div class="line">3、ceil() 进一法取整</div><div class="line">4、round() 四舍五入</div><div class="line">5、min() 求最小值或数组中最小值</div><div class="line">6、max() 求最大值数组中最大值</div></pre></td></tr></table></figure></p>
-
+        
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/06/12/php-3数学运算/" class="archive-article-date">
+      <a href="/2016/06/12/前端构建工具-webpack/" class="archive-article-date">
   	<time datetime="2016-06-12T07:49:33.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-06-12</time>
 </a>
       
@@ -380,7 +385,7 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/14/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><a class="page-number" href="/page/14/">14</a><span class="page-number current">15</span><a class="page-number" href="/page/16/">16</a><a class="page-number" href="/page/17/">17</a><span class="space">&hellip;</span><a class="page-number" href="/page/24/">24</a><a class="extend next" rel="next" href="/page/16/">Next &raquo;</a>
+      <a class="extend prev" rel="prev" href="/page/14/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><a class="page-number" href="/page/14/">14</a><span class="page-number current">15</span><a class="page-number" href="/page/16/">16</a><a class="page-number" href="/page/17/">17</a><span class="space">&hellip;</span><a class="page-number" href="/page/20/">20</a><a class="extend next" rel="next" href="/page/16/">Next &raquo;</a>
     </nav>
   
 

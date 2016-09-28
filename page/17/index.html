@@ -137,7 +137,7 @@
       <div class="body-wrap">
         
   
-    <article id="post-php-12上传文件" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-前端模板-总结" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -147,7 +147,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/12/php-12上传文件/">php上传文件</a>
+      <a class="article-title" href="/2016/06/12/前端模板-总结/">前端模板总结</a>
     </h1>
   
 
@@ -155,13 +155,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <pre><code>PHP上传配置
-</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">	</div></pre></td></tr></table></figure>
+        <p>前端使用模板的好处？</p>
+<p>缓存模板结构，在数据层操作完直接套用模板输出到客户端界面中。<br>减少dom操作的异常、减少拼接html的痛苦、减少各浏览器下dom操作的延迟差异。</p>
+
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/06/12/php-12上传文件/" class="archive-article-date">
+      <a href="/2016/06/12/前端模板-总结/" class="archive-article-date">
   	<time datetime="2016-06-12T07:49:33.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-06-12</time>
 </a>
       
@@ -182,7 +183,7 @@
 
 
   
-    <article id="post-php-8正则表达式" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-前端模板引擎-Handlebars" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -192,7 +193,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/12/php-8正则表达式/">php正则表达式</a>
+      <a class="article-title" href="/2016/06/12/前端模板引擎-Handlebars/">Handlebars</a>
     </h1>
   
 
@@ -200,24 +201,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>正则表达式语法<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">1、模式规则：/php/  在字符串前后加上两条斜杠即可。</div><div class="line">2、匹配函数：preg_match()函数在字符串中搜索模式，如果存在则返回<span class="literal">true</span>，否则返回<span class="literal">false</span>。</div></pre></td></tr></table></figure></p>
-<p>正则表达式中的元素<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">1、正则表达式中包含三种元素分别为：量词、元字符、修饰符。</div></pre></td></tr></table></figure></p>
-<p>量词<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">1、+	匹配任何至少包含一个前导字符串</div><div class="line">2、*	匹配任何包含零个或多个前导字符串</div><div class="line">3、?	匹配任何包含零个或一个前导字符串</div><div class="line">4、.	匹配任意字符串</div><div class="line">5、&#123;x&#125;	匹配任何包含x个前导字符串</div><div class="line">6、&#123;x,y&#125;匹配任何包含x到y个前导字符串</div><div class="line">7、&#123;x,&#125;	匹配任何包含至少x个前导字符串</div><div class="line">8、$	匹配字符串的行尾</div><div class="line">9、^	匹配字符串的行首</div><div class="line">10、|	匹配字符串的左边或者右边</div><div class="line">11、()	包围一个字符分组或定义个反引用，可以使用\1\2提取</div></pre></td></tr></table></figure></p>
-<p>元字符<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">1、[a-z]	匹配任何包含小写字母a-z的字符串</div><div class="line">2、[A-Z]	匹配任何包含大写字母A-Z的字符串</div><div class="line">3、[0-9]	匹配任何包含数字0-9的字符串</div><div class="line">4、[abc]	匹配任何包含小写字母a、b、c的字符串</div><div class="line">5、[^abc]	匹配任何不包含小写字母a、b、c的字符串</div><div class="line">6、[a-zA-Z0-9_]	匹配任何包含a-zA-Z0-9和下划线的字符串</div><div class="line">7、\w	匹配任何包含a-zA-Z0-9和下划线的字符串（同上）</div><div class="line">8、\W	匹配任何没有下划线和字母数字的字符串</div><div class="line">9、\d	匹配任何数字字符，和[0-9]相同</div><div class="line">10、\D	匹配任何非数字字符，和[^0-9]相同</div><div class="line">11、\s	匹配任何空白字符</div><div class="line">12、\S	匹配任何非空白字符</div><div class="line">13、\b	匹配是否到达了单词边界</div><div class="line">14、\B	匹配是否没有达到单词边界</div><div class="line">15、\	匹配正则中的特殊字符</div></pre></td></tr></table></figure></p>
-<p>修饰符<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">1、i	完成不区分大小写的搜索</div><div class="line">2、m	在匹配首内容或者尾内容时候采用多行识别匹配</div><div class="line">3、x	忽略正则中的空白</div><div class="line">4、A	强制从头开始匹配</div><div class="line">5、U	禁止贪婪匹配 只跟踪到最近的一个匹配符并结束</div></pre></td></tr></table></figure></p>
-<p>ereg()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">	</div></pre></td></tr></table></figure></p>
-<p>ereg_replace()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">	</div></pre></td></tr></table></figure></p>
-<p>eregi()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">	</div></pre></td></tr></table></figure></p>
-<p>eregi_replace()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">	</div></pre></td></tr></table></figure></p>
-<p>split()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">	</div></pre></td></tr></table></figure></p>
-<p>spliti()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">	</div></pre></td></tr></table></figure></p>
-<p>sql_regcase()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">	</div></pre></td></tr></table></figure></p>
-
+        
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/06/12/php-8正则表达式/" class="archive-article-date">
+      <a href="/2016/06/12/前端模板引擎-Handlebars/" class="archive-article-date">
   	<time datetime="2016-06-12T07:49:33.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-06-12</time>
 </a>
       
@@ -238,7 +227,7 @@
 
 
   
-    <article id="post-php-9日期与时间" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-前端模板引擎-Mustache" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -248,7 +237,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/12/php-9日期与时间/">php日期与时间</a>
+      <a class="article-title" href="/2016/06/12/前端模板引擎-Mustache/">Mustache</a>
     </h1>
   
 
@@ -256,29 +245,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>checkdate()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">验证日期，提供的日期如果有效，则返回<span class="literal">true</span>，否则返回<span class="literal">false</span>。</div></pre></td></tr></table></figure></p>
-<p>date()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">格式化时间和日期，返回根据预定义指令格式化时间和日期的字符串形式。</div></pre></td></tr></table></figure></p>
-<p>gettimeofday()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">查看更多时间信息，返回与当前时间有关的元素所组成的一个关联数组。</div></pre></td></tr></table></figure></p>
-<p>getdate()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">将时间戳转换成友好的值，接受一个时间戳，并返回一个由其各部分组成的关联数组。如果不给参数，那么返回当前的时间和日期。</div></pre></td></tr></table></figure></p>
-<p>time()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">获取当前的时间戳，可以获取当前的时间戳，并且可以通过设置时间戳的值。</div></pre></td></tr></table></figure></p>
-<p>mktime()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">获取特定的时间戳，</div></pre></td></tr></table></figure></p>
-<p>利用time()和mktime()计算时间差<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;?php</div><div class="line">   header(<span class="string">'Content-type: text/html; charset=GBK'</span>);</div><div class="line"><span class="variable">$now</span> = time();</div><div class="line"><span class="variable">$taxday</span> = mktime(0,0,0,7,17,2010);</div><div class="line"><span class="built_in">echo</span> round((<span class="variable">$taxday</span> - <span class="variable">$now</span>)/60/60);</div><div class="line">?&gt;</div></pre></td></tr></table></figure></p>
-<p>strtotime()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">将可读的日期转换为Unix时间戳</div></pre></td></tr></table></figure></p>
-<p>利用strtotime()计算时间差<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;?php</div><div class="line">   header(<span class="string">'Content-type: text/html; charset=GBK'</span>);</div><div class="line"><span class="built_in">echo</span> (strtotime(<span class="string">'2007-10-31 14:31:33'</span>) - strtotime(<span class="string">'2007-10-31 11:31:33'</span>))/60/60;</div><div class="line">?&gt;</div></pre></td></tr></table></figure></p>
-<p>getlastmod()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">可以得到当前文件最后修改时间的时间戳</div></pre></td></tr></table></figure></p>
-<p>设置时区和GMT/UTC<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">修改php.ini文件中的设置，找到[date]下的;date.timezone = 选项，将该项修改为date.timezone=Asia/Shanghai，然后重新启动apache服务器。</div></pre></td></tr></table></figure></p>
-<p>putenv()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">可以设置当前的默认时区</div></pre></td></tr></table></figure></p>
-<p>date_default_timezone_set()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">可以设置当前的默认时区</div></pre></td></tr></table></figure></p>
-<p>date_default_timezone_get()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">可以设置当前的默认时区</div></pre></td></tr></table></figure></p>
-<p>localtime()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">可以取得本地时间数据，然后返回一个数组。</div></pre></td></tr></table></figure></p>
-<p>microtime()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">该函数返回当前UNIX时间戳和微秒数。返回格式为msec sec的字符串，其中sec是当前的UNIX时间戳，msec为微秒数。</div></pre></td></tr></table></figure></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">	</div></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">	</div></pre></td></tr></table></figure>
+        
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/06/12/php-9日期与时间/" class="archive-article-date">
+      <a href="/2016/06/12/前端模板引擎-Mustache/" class="archive-article-date">
   	<time datetime="2016-06-12T07:49:33.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-06-12</time>
 </a>
       
@@ -299,7 +271,7 @@
 
 
   
-    <article id="post-php-自学知识点" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-前端模板引擎-artTemplate" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -309,7 +281,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/12/php-自学知识点/">php自学知识点</a>
+      <a class="article-title" href="/2016/06/12/前端模板引擎-artTemplate/">Mustache</a>
     </h1>
   
 
@@ -317,13 +289,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1、Date()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1、Date()函数输出系统当地时间</div><div class="line">Date(Y-m<span class="_">-d</span> H:i:s);</div><div class="line">会发现与当地时间差8小时。</div></pre></td></tr></table></figure></p>
+        <p>var a=100;function test(a) { console.log(a); console.log(foo()); var a = 1; function foo() { return 2; } } test();<br>var getRandomColor = function(){   </p>
+<p>  return  ‘#’ +<br>    (function(color){<br>    return (color +=  ‘0123456789abcdef’[Math.floor(Math.random()*16)])<br>      &amp;&amp; (color.length == 6) ?  color : arguments.callee(color);<br>  })(‘’);<br>}<br>getRandomColor();</p>
 
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/06/12/php-自学知识点/" class="archive-article-date">
+      <a href="/2016/06/12/前端模板引擎-artTemplate/" class="archive-article-date">
   	<time datetime="2016-06-12T07:49:33.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-06-12</time>
 </a>
       
@@ -344,7 +317,7 @@
 
 
   
-    <article id="post-代码库托管站-github" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-前端测试" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -354,7 +327,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/12/代码库托管站-github/">github</a>
+      <a class="article-title" href="/2016/06/12/前端测试/">前端测试</a>
     </h1>
   
 
@@ -362,12 +335,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>1</p>
+
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/06/12/代码库托管站-github/" class="archive-article-date">
+      <a href="/2016/06/12/前端测试/" class="archive-article-date">
   	<time datetime="2016-06-12T07:49:33.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-06-12</time>
 </a>
       
@@ -390,7 +364,7 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/16/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/15/">15</a><a class="page-number" href="/page/16/">16</a><span class="page-number current">17</span><a class="page-number" href="/page/18/">18</a><a class="page-number" href="/page/19/">19</a><span class="space">&hellip;</span><a class="page-number" href="/page/24/">24</a><a class="extend next" rel="next" href="/page/18/">Next &raquo;</a>
+      <a class="extend prev" rel="prev" href="/page/16/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/15/">15</a><a class="page-number" href="/page/16/">16</a><span class="page-number current">17</span><a class="page-number" href="/page/18/">18</a><a class="page-number" href="/page/19/">19</a><a class="page-number" href="/page/20/">20</a><a class="extend next" rel="next" href="/page/18/">Next &raquo;</a>
     </nav>
   
 

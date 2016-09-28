@@ -137,7 +137,7 @@
       <div class="body-wrap">
         
   
-    <article id="post-php-4数组" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-前端框架-AngularJs" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -147,7 +147,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/12/php-4数组/">php-数组</a>
+      <a class="article-title" href="/2016/06/12/前端框架-AngularJs/">Angular.js</a>
     </h1>
   
 
@@ -155,20 +155,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1、创建数组<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">1、通过array()创建一个数组。</div><div class="line"><span class="variable">$number</span>=array(1,2,3,4,5);</div><div class="line">2、print_r 函数：打印关于变量的易于理解的信息。</div><div class="line">3、通过rand()创建数组。</div><div class="line"><span class="variable">$number</span>=rand(1,10);</div></pre></td></tr></table></figure></p>
-<p>2、访问数组<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">1、索引</div><div class="line">2、<span class="keyword">for</span>循环</div><div class="line">3、foreach():通过foreach循环来遍历数组，这方式的好处，不需要考虑key。</div><div class="line">foreach(<span class="variable">$username</span> as <span class="variable">$key</span>=&gt;<span class="variable">$value</span>)&#123;&#125;</div><div class="line">4、测试是否为数组变量：is_array();</div></pre></td></tr></table></figure></p>
-<p>3、自定义键数组<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">1、初始化相关数组</div><div class="line"><span class="variable">$ages</span>=array(<span class="string">'a'</span>=&gt;19,<span class="string">'b'</span>=&gt;27,<span class="string">'c'</span>=&gt;23);</div><div class="line">2、访问数组元素</div><div class="line">3、追加数组：首先，创建只有一个元素的数组，然后追加两个元素。</div><div class="line">4、直接添加数组：无需创建，直接添加，添加第一个元素自动建立数组。</div><div class="line">5、使用循环语句：因为相关数组的索引不是数字，因此无法使用<span class="keyword">for</span>循环语句中使用一个简单的计数器对数组进行操作。但是可以使用foreach循环或list()和each()结构</div><div class="line">6、each():将数组的第一个键值对获取到，然后把这个键值对包装成一个新的数组。</div><div class="line">7、list()：把数组中的值赋给一些变量，list()只能认识key为数字的数组。</div><div class="line">8、reset()：将当前元素重新设置到数组开始处。</div><div class="line">9、array_unique()：它会移除数组重复的值。</div><div class="line">10、array_flip()：它会对调数组中的key和value;</div></pre></td></tr></table></figure></p>
-<p>4、数组里的数组<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">1、双重<span class="keyword">for</span>循环显示数组</div><div class="line">2、</div></pre></td></tr></table></figure></p>
-<p>5、数组的排序<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">1、sort()：将数组按字母升序进行排序，将数字升序进行排序。</div><div class="line">2、asort()：对数组进行排序并保持索引关系。</div><div class="line">3、ksort()：按键来排序。</div><div class="line">4、rsort():逆序</div><div class="line">5、arsort()</div><div class="line">6、krsort()</div><div class="line">7、shuffle()：将数组个元素进行随机排序。</div><div class="line">8、array_reverse()：给出一个原来数组的反向排序。</div><div class="line">9、array_unshift()：函数将新元素添加到数组头，</div><div class="line">10、array_push()：函数将每个新元素添加到数组的末尾。</div><div class="line">11、array_shift()：删除数组头第一个元素。</div><div class="line">12、array_pop()：删除并返回数组末尾的一个元素。</div><div class="line">13、array_rand()：返回数组中的一个或多个键</div></pre></td></tr></table></figure></p>
-<p>6、数组的指针操作<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">1、each():</div><div class="line">2、current():获取指针的当前元素</div><div class="line">3、next():将数组的内部指针向前移一位。</div><div class="line">4、reset():将数组的内部指针指向第一个单元。</div><div class="line">5、prev():向后移一位</div></pre></td></tr></table></figure></p>
-<p>7、统计数组个数<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">1、count()和sizeof()：统计数组下标的个数</div><div class="line">2、array_count_values()：统计数组所有值的个数，它返回一个数组。</div></pre></td></tr></table></figure></p>
-<p>8、将数组转换成标量变量<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">1、extract()：通过标量函数将字符串键（key）设置成变量，然后将值赋给了这个变量。</div></pre></td></tr></table></figure></p>
+        <p>1、MVC<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">视图（view）：用户界面</div><div class="line">控制器（controller）：业务逻辑</div><div class="line">模型（Model）：数据保存</div><div class="line">view传送指令到controller，controller完成业务逻辑后，要求Model改变状态，Model将新的数据发送到View，用户得到反馈，所有通信都是单向的。</div></pre></td></tr></table></figure></p>
+<p>Controller使用过程中的注意点<br>1、不要试图去复用Controller，一个控制器一般只负责一小块视图<br>2、不要在Controller中操作DOM， 这不是控制器的职责<br>3、不要在Controller里面做数据格式化，ng有很好的表单控件<br>4、不要在Controller里面做数据过滤操作，ng有$filter服务<br>5、一般来说，Controller是不会互相调用的，控制器之间的交互会通过事件进行。</p>
 
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/06/12/php-4数组/" class="archive-article-date">
+      <a href="/2016/06/12/前端框架-AngularJs/" class="archive-article-date">
   	<time datetime="2016-06-12T07:49:33.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-06-12</time>
 </a>
       
@@ -189,7 +183,7 @@
 
 
   
-    <article id="post-php-5目录与文件" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-前端框架-Backbone" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -199,7 +193,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/12/php-5目录与文件/">php-目录与文件</a>
+      <a class="article-title" href="/2016/06/12/前端框架-Backbone/">Backbone</a>
     </h1>
   
 
@@ -207,15 +201,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1、目录操作<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">1、解析目录路径：basename()函数返回路径的文件名部分</div><div class="line">2、获取路径的目录：dirname()函数返回路径目录部分</div><div class="line">3、关于路径的信息：pathinfo()函数创建一个关联数组，其中包括：目录名、基本名和扩展名。</div><div class="line">4、确定绝对路径：realpath()函数将path中的所有符号链接和相对路径引用转换为相应的硬链接和绝对路径。</div></pre></td></tr></table></figure></p>
-<p>2、磁盘、目录和文件计算<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">1、确定文件的大小：filesize()函数返回指定文件字节大小</div><div class="line">2、计算磁盘的可用空间：disk_free_space()函数返回指定的目录所在磁盘分区的可用空间</div><div class="line">3、计算磁盘的总容量：disk_total_space()函数返回指定的目录所在磁盘分区的总容量。</div><div class="line">4、确定文件的最后访问时间：fileatime()函数返回文件的最后访问时间，采用的Unix时间戳格式。</div><div class="line">5、确定文件的最后改变时间：filectime()函数返回文件的最后改变时间，采用Unix时间戳格式。（指所有者，权限的改变）</div><div class="line">6、确定文件的最后修改时间：filemtime()函数返回文件的最后修改时间，采用Unix时间戳格式。（指里面内容的改变）</div></pre></td></tr></table></figure></p>
-<p>3、文件处理<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">1、将数据写入一个文件，有3个步骤： 打开这个文件。如果文件不存在，需要先创建它； 将数据写入这个文件；关闭这个文件</div><div class="line">2、从一个文件中读出数据，也有3个步骤：打开这个文件。如果这个文件不能打开，就应该意识到这一点并且正确地退出。从文件中读出数据。 关闭这个文件。</div><div class="line">3、fopen()：返回的是资源类型resource，叫做资源句柄。</div><div class="line">4、w（只写）:在写入前，删除文件内容，将指针返回到文件开头。如果文件不存在，则尝试创建。</div><div class="line">5、fwrite():向文件写入一些数据。</div><div class="line">6、strlen()：获得字符串的长度</div><div class="line">7、file_put_contents()：</div><div class="line">8、fgetc()：读出一个字符，并将指针移到下一个字符。</div><div class="line">9、fgets()：读出一行字符，可以指定一行显示的长度。</div><div class="line">10、fgetss()：从文件指针中读取一行并过滤掉 HTML 标记。</div><div class="line">11、fread()：读取定量的字符。</div><div class="line">12、fpassthru()： 输出文件指针处的所有剩余数据。</div><div class="line">13、file()：将整个文件读入数组中，以行分组。</div><div class="line">14、readfile()：读入一个文件并写入到输出缓冲。</div><div class="line">15、file_get_contents()：将整个文件读入一个字符串</div><div class="line">16.、判断读完文件函数：feof()  ，返回<span class="literal">true</span> ,!feof() 返回<span class="literal">false</span>;</div><div class="line">17、查看文件是否存在：file_exists();</div><div class="line">18、查看一个文件的大小：filesize();</div><div class="line">19、删除一个文件：unlink();</div><div class="line">	20、在文件中定位：rewind()、fseek()和ftell()；</div><div class="line">21、rewind()函数可以将文件指针复位到文件的开始。</div><div class="line">22、ftell()函数可以以字节为单位报告文件指针当前在文件中的位置。</div><div class="line">23、fseek()函数可以将文件指针fp从<span class="built_in">whence</span>位置移动offset字节</div><div class="line">24、opendir()：打开路径指定的目录流。</div><div class="line">25、closedir()：关闭目录流。</div><div class="line">26、readdir()：返回目录中的各个元素。</div></pre></td></tr></table></figure></p>
-
+        
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/06/12/php-5目录与文件/" class="archive-article-date">
+      <a href="/2016/06/12/前端框架-Backbone/" class="archive-article-date">
   	<time datetime="2016-06-12T07:49:33.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-06-12</time>
 </a>
       
@@ -236,7 +227,7 @@
 
 
   
-    <article id="post-php-6自定义函数" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-前端框架-EmberJS" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -246,7 +237,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/12/php-6自定义函数/">php自定义函数</a>
+      <a class="article-title" href="/2016/06/12/前端框架-EmberJS/">Ember</a>
     </h1>
   
 
@@ -254,30 +245,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1、标准函数<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">1、标准的PHP发行包中有1000多个标准函数，这些标准函数都是系统内置的，不需要用户自己创建而可以直接使用。</div></pre></td></tr></table></figure></p>
-<p>2、自定义函数——函数命名<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1、函数名不能和已有的函数名重名。</div><div class="line">2、函数名只能包含字母、数字和下划线。</div><div class="line">3、函数名不能以数字开头</div></pre></td></tr></table></figure></p>
-<p>3、自定义函数——包含参数无返回的函数调用<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;?php</div><div class="line">    header(<span class="string">'Content-type: text/html; charset=GBK'</span>);</div><div class="line">    <span class="keyword">function</span> <span class="keyword">function</span>Area(<span class="variable">$radius</span>) &#123;</div><div class="line">        <span class="variable">$area</span> = <span class="variable">$radius</span> * <span class="variable">$radius</span> * pi();</div><div class="line">        <span class="built_in">echo</span> <span class="variable">$area</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">function</span>Area(10);</div><div class="line">?&gt;</div></pre></td></tr></table></figure></p>
-<p>4、自定义函数——包含参数有返回的函数调用<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">使用<span class="built_in">return</span>()语句可以向函数调用者返回任意确定值，将程序控制权返回到调用者的作用域。</div><div class="line">&lt;?php</div><div class="line">    header(<span class="string">'Content-type: text/html; charset=GBK'</span>);</div><div class="line">    <span class="keyword">function</span> <span class="keyword">function</span>Area(<span class="variable">$radius</span>) &#123;</div><div class="line">		<span class="built_in">return</span> <span class="variable">$radius</span> * <span class="variable">$radius</span> * pi();</div><div class="line">	&#125;</div><div class="line">	<span class="built_in">echo</span> <span class="keyword">function</span>Area(10);</div><div class="line">?&gt;</div></pre></td></tr></table></figure></p>
-<p>5、自定义函数——包含默认参数的函数调用<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">可以为输入参数指定默认值，在没有提供其他值的情况下，就会把这个默认值自动赋给该参数。</div><div class="line">&lt;?php</div><div class="line">    header(<span class="string">'Content-type: text/html; charset=GBK'</span>);</div><div class="line">    <span class="keyword">function</span> <span class="keyword">function</span>Area(<span class="variable">$radius</span>=10) &#123;</div><div class="line">		<span class="built_in">return</span> <span class="variable">$radius</span> * <span class="variable">$radius</span> * pi();</div><div class="line">	&#125;</div><div class="line">	<span class="built_in">echo</span> <span class="keyword">function</span>Area();</div><div class="line">?&gt;</div></pre></td></tr></table></figure></p>
-<p>6、自定义函数–返回多个值的函数调用<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">可以通过返回一个数组然后使用list()函数构造即可。</div><div class="line">&lt;?php</div><div class="line">    header(<span class="string">'Content-type: text/html; charset=GBK'</span>);</div><div class="line">    <span class="keyword">function</span> <span class="keyword">function</span>Info(<span class="variable">$name</span>,<span class="variable">$age</span>,<span class="variable">$job</span>) &#123;</div><div class="line">		<span class="variable">$userInfo</span> = array(<span class="variable">$name</span>,<span class="variable">$age</span>,<span class="variable">$job</span>);</div><div class="line">		<span class="built_in">return</span> <span class="variable">$userInfo</span>;</div><div class="line">	&#125;</div><div class="line">	list(<span class="variable">$name</span>,<span class="variable">$age</span>,<span class="variable">$job</span>) = <span class="keyword">function</span>Info(<span class="string">'火云'</span>,19,<span class="string">'前端攻城狮'</span>);</div><div class="line">	<span class="built_in">echo</span> <span class="variable">$name</span>.<span class="string">'今年'</span>.<span class="variable">$age</span>.<span class="string">'岁了，目前是个'</span>.<span class="variable">$job</span>;</div><div class="line">?&gt;</div></pre></td></tr></table></figure></p>
-<p>7、自定义函数——包含引用传参的函数调用<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">引用传递可以在函数内对参数的修改在函数范围外也能反应。</div><div class="line">&lt;?php</div><div class="line">    header(<span class="string">'Content-type: text/html; charset=GBK'</span>);</div><div class="line">    <span class="variable">$prices</span> = 50;</div><div class="line">	<span class="variable">$tax</span> = 0.5;</div><div class="line">	<span class="keyword">function</span> <span class="keyword">function</span>Prices(&amp;<span class="variable">$prices</span>,<span class="variable">$tax</span>) &#123;</div><div class="line">		<span class="variable">$prices</span> = <span class="variable">$prices</span> + (<span class="variable">$prices</span> * <span class="variable">$tax</span>);</div><div class="line">		<span class="variable">$tax</span> = <span class="variable">$tax</span> * 2;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">function</span>Prices(<span class="variable">$prices</span>,<span class="variable">$tax</span>);</div><div class="line">	<span class="built_in">echo</span> <span class="variable">$prices</span>;</div><div class="line">	<span class="built_in">echo</span> <span class="string">'&lt;br /&gt;'</span>;</div><div class="line">	<span class="built_in">echo</span> <span class="variable">$tax</span>;</div><div class="line">?&gt;</div></pre></td></tr></table></figure></p>
-<p>8、自定义函数——注意事项<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">1、函数调用将不区分大小写，所以调用functionname()、FunctionName()或FUNCTIOINNAME()都是有效的，而且都将返回相同的结果。为了方便，建议都用小写。</div><div class="line">2、注意到函数名称和变量名称是不同的，这一点很重要。变量名是区分大小写的，所以<span class="variable">$Name</span>和<span class="variable">$name</span>是两个不同的变量，但Name()和name()则是同一个函数。</div></pre></td></tr></table></figure></p>
-<p>9、全局变量定义global<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">关键字“global”可以用来手动指定一个在函数中定义或使用的变量具有全局作用域。</div></pre></td></tr></table></figure></p>
-<p>10、超级全局变量<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">可以通过使用超级全局变量<span class="variable">$GLOBAL</span>，可以访问或改变全局作用域中的任何变量。</div><div class="line">&lt;?php</div><div class="line">   header(<span class="string">'Content-type: text/html; charset=GBK'</span>);</div><div class="line">   <span class="variable">$GLOBALS</span>[<span class="string">'a'</span>] = 5;</div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">fna</span></span>() &#123;</div><div class="line">	<span class="variable">$GLOBALS</span>[<span class="string">'a'</span>] = 20;</div><div class="line">&#125;</div><div class="line">fna();</div><div class="line"><span class="built_in">echo</span> <span class="variable">$GLOBALS</span>[<span class="string">'a'</span>];</div><div class="line">?&gt;</div></pre></td></tr></table></figure></p>
-<p>11、创建自己的函数库<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">通常将函数集文件存放在library文件夹里，然后通过文件调用即可。</div></pre></td></tr></table></figure></p>
-<p>12、文件包含<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">为了确保重用性和模块性，最普遍的方式是把功能组建隔离为单独的文件，然后在需要时重新组装。PHP提供了四种在应用程序中包含文件的语句：include()语句、include_once()函数、require()、require_once()函数。</div></pre></td></tr></table></figure></p>
-<p>13、include()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">include()语句将在其被调用的位置处判断并包含一个文件。</div></pre></td></tr></table></figure></p>
-<p>14、include_once()函数<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">include_once()函数的作用与include()相同，不过它会首先验证是否已经包含了该文件。如果包含了该文件，则不再执行include_once()。</div></pre></td></tr></table></figure></p>
-<p>15、require()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">require()在很大程度与include()相同，都是将一个模板文件包含到require()调用所在的位置。</div></pre></td></tr></table></figure></p>
-<p>16、require_once()函数。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">require_once()函数的作用与require()相同，不过require_once()函数确保文件只包含一次。在遇到require_once()后，后面再试图包含相同的文件时都将被忽略。</div></pre></td></tr></table></figure></p>
-<p>17、include()和require()的区别<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">1、include()：如果文件不存在，就会告诉你警告，然后继续执行文件。</div><div class="line">2、require()：如果文件不存在，就会直接报错，然后停止执行。所以推荐使用require。</div></pre></td></tr></table></figure></p>
-<p>18、魔法常量<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">1、PHP实现了一些所谓的魔法常量，他们并不真的是常量，因为这些魔法常量会根据使用的场合改变值。</div><div class="line">2、__FILE__	    ：当前文件名</div><div class="line">3、__LINE__	    ：当前行号</div><div class="line">4、__FUNCTION__	：当前函数名</div><div class="line">5、__CLASS__	：当前类名</div><div class="line">6、__METHOD__	：当前方法名</div></pre></td></tr></table></figure></p>
-
+        
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/06/12/php-6自定义函数/" class="archive-article-date">
+      <a href="/2016/06/12/前端框架-EmberJS/" class="archive-article-date">
   	<time datetime="2016-06-12T07:49:33.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-06-12</time>
 </a>
       
@@ -298,7 +271,7 @@
 
 
   
-    <article id="post-php-7字符串处理" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-前端框架-ReactJs" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -308,7 +281,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/12/php-7字符串处理/">php字符串处理</a>
+      <a class="article-title" href="/2016/06/12/前端框架-ReactJs/">react.js</a>
     </h1>
   
 
@@ -316,59 +289,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1、字符串格式化<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">整理字符串的第一步是清理字符串中多余的空格。虽然这一部操作不是必需的，但如果要将字符串存入一个文件或数据库中，或者将它和别的字符串进行比较，这就是非常有用的。</div></pre></td></tr></table></figure></p>
-<p>2、chop()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">移除字符串后面多余的空白，包括新行。</div></pre></td></tr></table></figure></p>
-<p>3、ltrim()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">移除字符串起始处多余空白</div></pre></td></tr></table></figure></p>
-<p>4、rtrim()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">移除字符串后面多余的空白，包括新行，此函数是chop()的别名</div></pre></td></tr></table></figure></p>
-<p>5、trim()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">移除字符串两边多余的空白</div></pre></td></tr></table></figure></p>
-<p>6、nl2br()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">将字符串作为输入参数，用HTML中的&lt;br /&gt;标记代替字符串中的换行符。</div></pre></td></tr></table></figure></p>
-<p>7、htmlentities()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">将所有的字符都转换成HTML字符串。</div></pre></td></tr></table></figure></p>
-<p>8、htmlspecialchars<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">转换特殊字符</div></pre></td></tr></table></figure></p>
-<p>9、strip_tags()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">去掉字符串中的HTML标签</div></pre></td></tr></table></figure></p>
-<p>10、转义字符串<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">PHP提供了两个专门用于转义字符串的函数。在将任何字符串写到数据库之前，应该使用addslashes()将它们重新格式化。如果想去掉这些斜杠，则使用stripslashes()。</div></pre></td></tr></table></figure></p>
-<p>11、addslashes()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">会将（单引号和双引）、反斜杠（\）和NULL字符前，都加上斜杠。</div></pre></td></tr></table></figure></p>
-<p>12、stripslashes()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">去掉斜杠</div></pre></td></tr></table></figure></p>
-<p>13、strtoupper()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">将字符串转换为大写</div></pre></td></tr></table></figure></p>
-<p>14、strtolower()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">将字符串转换成小写</div></pre></td></tr></table></figure></p>
-<p>15、ucfirst()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">将第一个字母转换为大写</div></pre></td></tr></table></figure></p>
-<p>16、ucwords()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">将每个单词第一个字母转换为大写</div></pre></td></tr></table></figure></p>
-<p>17、str_pad()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">将字符串用指定个数的字符填充字符串。</div><div class="line">&lt;?php</div><div class="line">   header(<span class="string">'Content-type: text/html; charset=GBK'</span>);</div><div class="line">   <span class="built_in">echo</span> str_pad(<span class="string">'Salad'</span>,10,<span class="string">'#'</span>).<span class="string">'is good.'</span>;</div><div class="line">?&gt;</div></pre></td></tr></table></figure></p>
-<p>18、操作子字符串<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">通常，我们想查看字符串的各个部分。例如，查看句子中的单词，或者将一个域名或电子邮件地址分割成一个个的组件部分。</div></pre></td></tr></table></figure></p>
-<p>19、explode()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">使用一个字符串分割另外一个字符串；返回的是一个数组。</div><div class="line">&lt;?php</div><div class="line">   header(<span class="string">'Content-type: text/html; charset=GBK'</span>);</div><div class="line">   <span class="variable">$link</span> = <span class="string">'http://xiangzhi127.github.io/'</span>;</div><div class="line"><span class="variable">$link_array</span>  = explode(<span class="string">':'</span>,<span class="variable">$link</span>);</div><div class="line">print_r(<span class="variable">$link_array</span>);</div><div class="line">?&gt;</div></pre></td></tr></table></figure></p>
-<p>20、implode()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">使用implode()或join()函数来实现与函数explode()相反的效果</div></pre></td></tr></table></figure></p>
-<p>21、join()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">使用implode()或join()函数来实现与函数explode()相反的效果</div></pre></td></tr></table></figure></p>
-<p>22、strtok()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">一次只从字符串取出一些片段（称为令牌）。</div><div class="line">&lt;?php</div><div class="line">    header(<span class="string">'Content-type: text/html; charset=GBK'</span>);</div><div class="line">	<span class="variable">$str</span> = <span class="string">"I,will.be#back"</span>;</div><div class="line">	<span class="variable">$tok</span> = strtok(<span class="variable">$str</span>,<span class="string">",.#"</span>);</div><div class="line">	<span class="keyword">while</span>(<span class="variable">$tok</span>) &#123;</div><div class="line">    	<span class="built_in">echo</span> <span class="string">"<span class="variable">$tok</span>&lt;br \&gt;"</span>;</div><div class="line">   		<span class="variable">$tok</span> = strtok(<span class="string">",.#"</span>);</div><div class="line">	&#125;</div><div class="line">?&gt;</div></pre></td></tr></table></figure></p>
-<p>23、substr()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">substr()允许我们访问一个字符串给定起点和终点的子字符串。</div></pre></td></tr></table></figure></p>
-<p>24、str_split()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">分解字符串，返回一个字符串。</div></pre></td></tr></table></figure></p>
-<p>25、strrev()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">逆置字符串,可以将一个字符串逆反过来。</div></pre></td></tr></table></figure></p>
-<p>26、字符串比较<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">已经用过<span class="string">"= ="</span>号来比较两个字符串是否相等。</div></pre></td></tr></table></figure></p>
-<p>27、字符串的排序——strcmp()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">如果这两个字符串相等，该函数返回0，如果按字典顺序str1和str2后面（大于str2）就返回一个正数，如果str1小于str2就返回一个负数。这个函数是区分大小写的。</div></pre></td></tr></table></figure></p>
-<p>28、strcasecmp()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">不区分大小写，其他和strcmp()一样。</div></pre></td></tr></table></figure></p>
-<p>29、strnatcmp()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">按“自然排序”比较字符串。</div></pre></td></tr></table></figure></p>
-<p>30、strspn()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">返回一个字符串中包含有另一个字符串中字符的第一部分的长度。也就是求两个字符串之间相同的部分。</div><div class="line">&lt;?php</div><div class="line">   header(<span class="string">'Content-type: text/html; charset=GBK'</span>);</div><div class="line"><span class="built_in">echo</span> strspn(<span class="string">'github'</span>,<span class="string">'http://xiangzhi127.github.io/'</span>);</div><div class="line">?&gt;</div></pre></td></tr></table></figure></p>
-<p>31、strlen()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">测试字符串的长度</div></pre></td></tr></table></figure></p>
-<p>32、substr_count()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">返回一个字符串在另一个字符串中出现的次数</div></pre></td></tr></table></figure></p>
-<p>33、查找替换字符串<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">通常，我们需要检查一个更长的字符串中是否含有一个特定的子字符串。这种部分匹配通常比测试字符串的完全等价更有用处.</div></pre></td></tr></table></figure></p>
-<p>34、strstr()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">从指定的字符串开始输出之后的字符串。</div></pre></td></tr></table></figure></p>
-<p>35、strchr()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">	</div></pre></td></tr></table></figure></p>
-<p>36、strrchr()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">	</div></pre></td></tr></table></figure></p>
-<p>37、stristr()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">不区分大小写</div></pre></td></tr></table></figure></p>
-<p>38、strpos()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">查找某个字符串最先出现的位置</div></pre></td></tr></table></figure></p>
-<p>39、strrops()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">查找某个字符串最后出现的位置</div></pre></td></tr></table></figure></p>
-<p>40、str_replace()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">	</div></pre></td></tr></table></figure></p>
-<p>41、str_ireplace()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">	</div></pre></td></tr></table></figure></p>
-<p>42、substr_replace()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">	</div></pre></td></tr></table></figure></p>
-<p>43、处理中文字符——mb_strlen()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">对应的函数为 strlen()  求字符串的长度</div></pre></td></tr></table></figure></p>
-<p>44、处理中文字符——mb_strstr()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">对应的函数为 strstr()  求某字符串到结尾的字符</div></pre></td></tr></table></figure></p>
-<p>45、处理中文字符——mb_strpos()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">对应的函数为 strpos()  求出字符最先出现处</div></pre></td></tr></table></figure></p>
-<p>46、处理中文字符——mb_substr()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">对应的函数为 substr()  取出指定的字符串</div></pre></td></tr></table></figure></p>
-<p>47、处理中文字符——mb_substr_count()<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">对应函数为 substr_str() 返回字符串出现的次数</div></pre></td></tr></table></figure></p>
+        <p>正在学习中…敬请留意！<br>1、首先了解与react相关的一些概念<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">Es6 React</div><div class="line">虚拟DOM（vitual DOM）</div><div class="line">组件驱动开发（component-driven development）</div><div class="line">不变性（immutability）</div><div class="line">自上而下的渲染（top-down rendering）</div><div class="line">渲染路径和优化</div><div class="line">打包工具、ES6、构建请求、debugging、路由</div><div class="line">同构React（isomorphic React）</div></pre></td></tr></table></figure></p>
 
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/06/12/php-7字符串处理/" class="archive-article-date">
+      <a href="/2016/06/12/前端框架-ReactJs/" class="archive-article-date">
   	<time datetime="2016-06-12T07:49:33.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-06-12</time>
 </a>
       
@@ -389,7 +316,7 @@
 
 
   
-    <article id="post-JavaScript-1语法、关键保留字及变量 " class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-前端框架-VueJs" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -399,7 +326,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/12/JavaScript-1语法、关键保留字及变量 /">JavaScript-语法</a>
+      <a class="article-title" href="/2016/06/12/前端框架-VueJs/">vue.js</a>
     </h1>
   
 
@@ -407,16 +334,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1、区分大小写<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ECMAScript中的一切，包括变量、函数名和操作符都是区分大小写的。</div></pre></td></tr></table></figure></p>
-<p>2、标识符<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">所谓标识符，就是指变量、函数、属性的名字，或者函数的参数。</div><div class="line">标识符可以是下列格式规则组合起来的一或多个字符：</div><div class="line">1、第一字符必须是一个字母、下划线(_)或一个美元符号($)。</div><div class="line">2、其他字符可以是字母、下划线、美元符号或数字。</div><div class="line">3、不能把关键字、保留字、<span class="literal">true</span>、<span class="literal">false</span>和null作为标识符。</div></pre></td></tr></table></figure></p>
-<p>3、注释<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">ECMAScript使用C风格的注释，包括单行注释和块级注释。</div><div class="line">1、// 单行注释</div><div class="line">2、/*</div><div class="line">	* 这是一个多行</div><div class="line">	* 注释</div><div class="line">	*/</div></pre></td></tr></table></figure></p>
-<p>4、直接量(字面量literal)<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">所有直接量(字面量)，就是程序中直接显示出来的数据值。</div><div class="line">1、数字字面量</div><div class="line">2、字符串字面量</div><div class="line">3、布尔值字面量</div><div class="line">4、对象字面量</div><div class="line">5、正则表达式字面量</div><div class="line">6、对象字面量表达式</div><div class="line">7、数组字面量表达式</div></pre></td></tr></table></figure></p>
+        <p>正在学习中…敬请留意！</p>
 
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/06/12/JavaScript-1语法、关键保留字及变量 /" class="archive-article-date">
+      <a href="/2016/06/12/前端框架-VueJs/" class="archive-article-date">
   	<time datetime="2016-06-12T07:49:33.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-06-12</time>
 </a>
       
@@ -439,7 +363,7 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/15/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="page-number" href="/page/15/">15</a><span class="page-number current">16</span><a class="page-number" href="/page/17/">17</a><a class="page-number" href="/page/18/">18</a><span class="space">&hellip;</span><a class="page-number" href="/page/24/">24</a><a class="extend next" rel="next" href="/page/17/">Next &raquo;</a>
+      <a class="extend prev" rel="prev" href="/page/15/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="page-number" href="/page/15/">15</a><span class="page-number current">16</span><a class="page-number" href="/page/17/">17</a><a class="page-number" href="/page/18/">18</a><span class="space">&hellip;</span><a class="page-number" href="/page/20/">20</a><a class="extend next" rel="next" href="/page/17/">Next &raquo;</a>
     </nav>
   
 
