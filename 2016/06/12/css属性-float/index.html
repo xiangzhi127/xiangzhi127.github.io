@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>css属性-float | 我的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="float最初的初衷是为了实现文字环绕效果。flaot具有包裹性。flaot具有破坏性，但它的破坏性只是为了实现环绕的效果而已。某个元素被设置float属性后，这个元素会生成一个块级框，而不论它本身是何种元素。(假如这个元素是行内标签，本来是不可以设置宽高的，float后，变成了块级元素，这样就可以设置它的宽高了。)假如在一行之上只有极少的空间可供浮动元素，那么这个元素会跳至下一行，这个过程会持续">
+<meta property="og:type" content="article">
+<meta property="og:title" content="css属性-float">
+<meta property="og:url" content="http://xiangzhi127.github.io/2016/06/12/css属性-float/index.html">
+<meta property="og:site_name" content="我的博客">
+<meta property="og:description" content="float最初的初衷是为了实现文字环绕效果。flaot具有包裹性。flaot具有破坏性，但它的破坏性只是为了实现环绕的效果而已。某个元素被设置float属性后，这个元素会生成一个块级框，而不论它本身是何种元素。(假如这个元素是行内标签，本来是不可以设置宽高的，float后，变成了块级元素，这样就可以设置它的宽高了。)假如在一行之上只有极少的空间可供浮动元素，那么这个元素会跳至下一行，这个过程会持续">
+<meta property="og:updated_time" content="2016-09-25T16:19:37.977Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="css属性-float">
+<meta name="twitter:description" content="float最初的初衷是为了实现文字环绕效果。flaot具有包裹性。flaot具有破坏性，但它的破坏性只是为了实现环绕的效果而已。某个元素被设置float属性后，这个元素会生成一个块级框，而不论它本身是何种元素。(假如这个元素是行内标签，本来是不可以设置宽高的，float后，变成了块级元素，这样就可以设置它的宽高了。)假如在一行之上只有极少的空间可供浮动元素，那么这个元素会跳至下一行，这个过程会持续">
+  
+    <link rel="alternative" href="/atom.xml" title="我的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="//favicon.png">
+  
+  <script src="/style.js"></script>
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="null" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">yunkai</a></h1>
+		</hgroup>
+
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/随笔">随笔</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">友链</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="3" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="#" title="github">github</a>
+		        
+					<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+		        
+					<a class="rss" target="_blank" href="#" title="rss">rss</a>
+		        
+					<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-list"></i></div>
+  		<h1 class="header-author js-mobile-header hide">yunkai</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="null" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">yunkai</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/随笔">随笔</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        <article id="post-css属性-float" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      css属性-float
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>float最初的初衷是为了实现文字环绕效果。<br>flaot具有包裹性。<br>flaot具有破坏性，但它的破坏性只是为了实现环绕的效果而已。<br>某个元素被设置float属性后，这个元素会生成一个块级框，而不论它本身是何种元素。<br>(假如这个元素是行内标签，本来是不可以设置宽高的，float后，变成了块级元素，这样就可以设置它的宽高了。)<br>假如在一行之上只有极少的空间可供浮动元素，那么这个元素会跳至下一行，这个过程会持续到某一行拥有足够的空间为止。<br>浮动后浮动元素与文字处于同一文档流。<br>flaot具有破坏性是指：浮动后的浮动元素会使父元素的高度塌陷。那么解决这个问题的方法有<br>（1）父元素设置高度<br>（2）父元素设置overflow:auto;<br>JavaScript 语法：     object.style.cssFloat=”left”。<br>清除浮动带来的影响：<br>1、clear:both;这个只适合于block水平元素，对于行内元素不起作用的(对于外层使用clear:both;会清除元素的跟随性，但是父元素高度塌陷还是没有解决。<br>所以：clear:both建议使用在内层。)。<br>2、伪元素清除,用于父元素上。（只适合于外层）<br>清除浮动的css代码：<br>.clearfix:after{<br>    content:’’;<br>    display:block;<br>    height:0;<br>    overflow:hidden;<br>    clear:both;<br>}<br>.clearfix{<em>zoom:1;}<br>或者<br>.clearfix:after{<br>    content:’’;<br>    display:table;<br>    clear:both;<br>}<br>.clearfix{</em>zoom:1;}<br>3、BFC/haslayout(用于外层的)<br>父元素设置为BFC/haslayout。<br>BFC/haslayout通常声明：<br>（1）float:left/right;<br>（2）position:absolute/fixed<br>（3）overflow:hidden/scroll/auto<br>（4）display:inline-block/table-cell<br>（5）width/height/zoom:1<br>3列布局：<br>float:left；<br>float:right;<br>text-align:center;<br>2列布局，一侧固定，另一侧自适应：<br>float:left;<br>margin-left;<br>自适应布局(固定布局写法)：<br>float:left;<br>display: table-cell; <em>display: inline-block; width: 2000px; </em>width: auto;</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/06/12/css属性-float/" class="archive-article-date">
+  	<time datetime="2016-06-12T07:49:33.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-06-12</time>
+</a>
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2016/06/12/css属性-background/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          sass
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/06/12/css属性-line-height/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">css属性line-height</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+
+
+
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 yunkai
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: false,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/"
+	}
+</script>
+
+<script src="/./main.js"></script>
+
+
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
+    
+    
+      <li data-hook="tools-section-friends"><span class="text">友链</span><i class="icon-link"></i></li>
+    
+    
+      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+    				
+    			</div>
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-friends">
+  		
+  			<div class="friends-wrap" id="js-friends">
+  			
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接1</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接2</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接3</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接4</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接5</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接6</a>
+  	        
+  	        </div>
+  		
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-me">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>

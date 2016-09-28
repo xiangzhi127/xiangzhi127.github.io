@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>JavaScript | 我的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1、this123451、this是执行上下文（Execution Context）的一个重要属性，是一个与执行上下文相关的特殊对象。2、this不是变量对象（Variable Object）的一个属性，所以跟变量不同，this从不会参与到标识符解析过程。在代码中当访问this的时候，它的值是直接从执行上下文中获取，并不需要任何作用域链查找。this的值只在进入上下文的时候进行一次确定。3、同一个">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript">
+<meta property="og:url" content="http://xiangzhi127.github.io/2016/06/12/javaScript/index.html">
+<meta property="og:site_name" content="我的博客">
+<meta property="og:description" content="1、this123451、this是执行上下文（Execution Context）的一个重要属性，是一个与执行上下文相关的特殊对象。2、this不是变量对象（Variable Object）的一个属性，所以跟变量不同，this从不会参与到标识符解析过程。在代码中当访问this的时候，它的值是直接从执行上下文中获取，并不需要任何作用域链查找。this的值只在进入上下文的时候进行一次确定。3、同一个">
+<meta property="og:updated_time" content="2016-09-24T14:15:05.666Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JavaScript">
+<meta name="twitter:description" content="1、this123451、this是执行上下文（Execution Context）的一个重要属性，是一个与执行上下文相关的特殊对象。2、this不是变量对象（Variable Object）的一个属性，所以跟变量不同，this从不会参与到标识符解析过程。在代码中当访问this的时候，它的值是直接从执行上下文中获取，并不需要任何作用域链查找。this的值只在进入上下文的时候进行一次确定。3、同一个">
+  
+    <link rel="alternative" href="/atom.xml" title="我的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="//favicon.png">
+  
+  <script src="/style.js"></script>
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="null" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">yunkai</a></h1>
+		</hgroup>
+
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/随笔">随笔</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">友链</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="3" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="#" title="github">github</a>
+		        
+					<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+		        
+					<a class="rss" target="_blank" href="#" title="rss">rss</a>
+		        
+					<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-list"></i></div>
+  		<h1 class="header-author js-mobile-header hide">yunkai</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="null" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">yunkai</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/随笔">随笔</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        <article id="post-javaScript" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      JavaScript
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1、this<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">1、this是执行上下文（Execution Context）的一个重要属性，是一个与执行上下文相关的特殊对象。</div><div class="line">2、this不是变量对象（Variable Object）的一个属性，所以跟变量不同，this从不会参与到标识符解析过程。在代码中当访问this的时候，它的值是直接从执行上下文中获取，并不需要任何作用域链查找。this的值只在进入上下文的时候进行一次确定。</div><div class="line">3、同一个函数。当在不同的上下文进行调用的时候，this的值就可能会不同。也就是说，this的值是通过函数调用表达式的<span class="built_in">caller</span>所提供的。</div><div class="line">4、在全局上下文中，this总是global object,在浏览器中就是window对象。</div><div class="line">5、函数上下文，this的值直接受函数调用方式的影响。</div></pre></td></tr></table></figure></p>
+<p>2、遍历一个obj的属性到数组<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var a=[];</div><div class="line"><span class="keyword">for</span>(a[a.length] <span class="keyword">in</span> obj);</div><div class="line"><span class="built_in">return</span> a;</div></pre></td></tr></table></figure></p>
+<p>3、重复字符串<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">var reapeat=<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">	var join=Array.prototype.join=&#123;&#125;;</div><div class="line">	<span class="built_in">return</span> <span class="keyword">function</span>(target,n)&#123;</div><div class="line">		obj.length=n+1;</div><div class="line">		<span class="built_in">return</span> join.call(obj,target);</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>4、JavaScript的异步和回调<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">1、同步和异步</div><div class="line">同步是顺序执行，异步就是不完全按顺序执行。异步好处就是提高程序的运行效率，不必等一个程序跑完，再跑下一个程序。</div><div class="line">2、阻塞和非阻塞</div><div class="line">阻塞就是说一个程序没运行完，它后面的程序是无法运行的。</div><div class="line">非阻塞则相反，一个程序如果因为各种原因（网络、代码量）没运行完的时候，其他程序也是可以继续运行的。</div><div class="line">3、单线程和多线程</div><div class="line">单线程是指程序运行只要一个通道，不同的方法需要排队执行。</div><div class="line">多线程相当于开通几个通道运行程序，使得程序可以在不同的线程中运行，不会互相影响。</div><div class="line">4、模拟js中的异步方法--setTimeout()</div><div class="line">5、js中异步的一些方法：回调、事件类方法、promise。</div></pre></td></tr></table></figure></p>
+<p>5、JavaScript上下文与作用域<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">1、Execution context（执行上下文）</div><div class="line">简称上下文，决定了js执行过程中可以获取哪些变量、函数、数据，一段程序可能被分割成许多不同的上下文，每个上下文都会绑定一个变量对象（variable object）,它就像一个容器，用来存储当前上下文中所有已定义或可获取的变量，函数等。要注意的是，上下文与作用域（scope）是不同的概念。js本身是单线程，每当有<span class="keyword">function</span>被执行时，就会产生一个新的上下文，这一上下文会被压人js的上下文堆栈（context stack）中，<span class="keyword">function</span>执行结束后则被弹出，因此js解析器总是在栈顶上下文中执行。最后在生成新的上下文时，首先会绑定该上下文的变量对象，其中包括argument和该函数中定义的变量；之后会创建该上下文的作用域链（scope chain），将this赋予这一<span class="keyword">function</span>所属的object。</div><div class="line">2、this</div><div class="line">上文提到this被赋予<span class="keyword">function</span>所属的Object，具体来说，当<span class="keyword">function</span>是定义在global对象中时，this指向global；当<span class="keyword">function</span>作为Object的方法时，this指向该Object</div><div class="line">3、Scope chain</div><div class="line">上文提到，在<span class="keyword">function</span>被执行时生成新的上下文时会先绑定当前上下文的变量对象，再创建作用域链。我们知道<span class="keyword">function</span>的定义是可以嵌套在其他<span class="keyword">function</span>所创建的上下文中，也可以并列地定义在同一个上下文中（如global）。作用域链实际上就是自下而上地将所有嵌套定义的上下文所绑定的变量对象串接到一起，使嵌套的<span class="keyword">function</span>可以“继承”上层上下文的变量，而并列的<span class="keyword">function</span>之间互不干扰：</div><div class="line">4、Closure</div><div class="line">如果理解了上文中提到的上下文与作用域链的机制，再来看闭包的概念就很清楚了。每个<span class="keyword">function</span>在调用时会创建新的上下文及作用域链，而作用域链就是将外层（上层）上下文所绑定的变量对象逐一串连起来，使当前<span class="keyword">function</span>可以获取外层上下文的变量、数据等。如果我们在<span class="keyword">function</span>中定义新的<span class="keyword">function</span>，同时将内层<span class="keyword">function</span>作为值返回，那么内层<span class="keyword">function</span>所包含的作用域链将会一起返回，即使内层<span class="keyword">function</span>在其他上下文中执行，其内部的作用域链仍然保持着原有的数据，而当前的上下文可能无法获取原先外层<span class="keyword">function</span>中的数据，使得<span class="keyword">function</span>内部的作用域链被保护起来，从而形成“闭包”。</div></pre></td></tr></table></figure></p>
+<p>6、JavaScript<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure></p>
+<p>7、setTimeout<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">	</div></pre></td></tr></table></figure></p>
+<p>8、给链接加上一个#，就会默认的返回顶部。<br>优点：简单、没有兼容性问题<br>缺点：视觉上不够直观，用户体验不够好。<br>9、用JavaScript制作回到顶部的效果<br>用到的知识点：<br>(1)获取滚动条距离顶部的距离<br>var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;<br>(2)滚动条滚动事件<br>window.onscroll=function(){<br>    判断scrollTop的高度是否大于clientHeight的高度，从而隐藏回到顶部的按钮<br>}<br>setInterval(function(){<br>    主要实现滚动效果：速度从快到慢滚动到页面的顶部。<br>    然后到了顶部，清空定时器。<br>},30)<br>10、制作搜索框(略)，用户输入时，提示下拉层。<br>主要用的知识点：<br>pc上的web页面鼠标会产生onmousedown、onmouseup、onmouseout、onmouseover、onmousemove的事件。<br>在移动终端上的web页面触屏时会产生ontouchstart、ontouchmove、ontouchend、ontouchcancel 事件，分别对应了触屏开始、拖拽及完成触屏事件和取消。</p>
+<p>!function(){alert(a);var a=10;alert(a);}();</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/06/12/javaScript/" class="archive-article-date">
+  	<time datetime="2016-06-12T07:49:33.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-06-12</time>
+</a>
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2016/06/12/jQuery-面试题/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          面试题--jQuery
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/06/12/nodejs的包管理和分发工具-npm/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">npm</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+
+
+
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 yunkai
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: false,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/"
+	}
+</script>
+
+<script src="/./main.js"></script>
+
+
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
+    
+    
+      <li data-hook="tools-section-friends"><span class="text">友链</span><i class="icon-link"></i></li>
+    
+    
+      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+    				
+    			</div>
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-friends">
+  		
+  			<div class="friends-wrap" id="js-friends">
+  			
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接1</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接2</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接3</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接4</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接5</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接6</a>
+  	        
+  	        </div>
+  		
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-me">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>render | 我的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="下面是渲染引擎在取得内容之后的基本流程：解析html以构建dom树 -&amp;gt; 构建render树 -&amp;gt; 布局render树 -&amp;gt; 绘制render树123456789101、渲染引擎开始解析html，并将标签转化为内容树中的dom节点，最后形成dom树。其中的dom节点很多，你可以查看。2、接着，它解析外部CSS文件及style标签中的样式信息，这些样式信息构成了CSS Rule T">
+<meta property="og:type" content="article">
+<meta property="og:title" content="render">
+<meta property="og:url" content="http://xiangzhi127.github.io/2016/06/12/前端知识-浏览器渲染/index.html">
+<meta property="og:site_name" content="我的博客">
+<meta property="og:description" content="下面是渲染引擎在取得内容之后的基本流程：解析html以构建dom树 -&amp;gt; 构建render树 -&amp;gt; 布局render树 -&amp;gt; 绘制render树123456789101、渲染引擎开始解析html，并将标签转化为内容树中的dom节点，最后形成dom树。其中的dom节点很多，你可以查看。2、接着，它解析外部CSS文件及style标签中的样式信息，这些样式信息构成了CSS Rule T">
+<meta property="og:updated_time" content="2016-08-23T06:38:07.320Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="render">
+<meta name="twitter:description" content="下面是渲染引擎在取得内容之后的基本流程：解析html以构建dom树 -&amp;gt; 构建render树 -&amp;gt; 布局render树 -&amp;gt; 绘制render树123456789101、渲染引擎开始解析html，并将标签转化为内容树中的dom节点，最后形成dom树。其中的dom节点很多，你可以查看。2、接着，它解析外部CSS文件及style标签中的样式信息，这些样式信息构成了CSS Rule T">
+  
+    <link rel="alternative" href="/atom.xml" title="我的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="//favicon.png">
+  
+  <script src="/style.js"></script>
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="null" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">yunkai</a></h1>
+		</hgroup>
+
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/随笔">随笔</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">友链</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="3" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="#" title="github">github</a>
+		        
+					<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+		        
+					<a class="rss" target="_blank" href="#" title="rss">rss</a>
+		        
+					<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-list"></i></div>
+  		<h1 class="header-author js-mobile-header hide">yunkai</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="null" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">yunkai</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/随笔">随笔</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        <article id="post-前端知识-浏览器渲染" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      render
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>下面是渲染引擎在取得内容之后的基本流程：<br>解析html以构建dom树 -&gt; 构建render树 -&gt; 布局render树 -&gt; 绘制render树<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">1、渲染引擎开始解析html，并将标签转化为内容树中的dom节点，最后形成dom树。其中的dom节点很多，你可以查看。</div><div class="line">2、接着，它解析外部CSS文件及style标签中的样式信息，这些样式信息构成了CSS Rule Tree。</div><div class="line">注意，每当一个新元素加入到这个dom树当中，浏览器便会通过css引擎查遍css样式表，找到符合该元素的样式规则应用到这个元素上。css引擎查找样式表，对每条规则都按从右到左的顺序去匹配。</div><div class="line">3、解析完成后，浏览器引擎会通过 DOM Tree 和 CSS Rule Tree 来构造 Rendering Tree。</div><div class="line">注意：Rendering Tree 渲染树并不等同于 DOM 树，因为一些像 Header 或 display:none 的东西就没必要放在渲染树中了。</div><div class="line">4、布局，浏览器将元素进行定位布局。</div><div class="line">5、绘制，绘制元素样式，颜色，背景，大小，边框。</div><div class="line">注意，这个渲染过程是逐步完成的，为了更好的用户体验，渲染引擎将会尽可能早的将内容呈现到屏幕上，并不会等到所有的html都解析完成之后再去构建和布局render树。它是解析完一部分内容就显示一部分内容，同时，可能还在通过网络下载其余内容。</div><div class="line">注意，在解析HTML时，如果发现外部css资源链接，就发送下载请求。浏览器在下载css资源的同时，会解析HTML文件，这并不会阻塞。</div><div class="line">注意，浏览器在处理HTML页面渲染和JavaScript脚本执行的时候是单一进程的，所以当浏览器在渲染HTML遇到了script标签会先去执行标签内的代码，如果是使用src属性的外链文件，则先下载再执行。在这个过程中，必须等待脚本文件下载完，这时，文档的解析会暂停，并且等到脚本文件执行完在继续，所以，脚本文件的下载和执行，会阻断其他资源文件的下载和页面渲染。</div></pre></td></tr></table></figure></p>
+<p>什么是重绘？<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">重绘是一个元素外观的改变所触发的浏览器行为，例如改变visibility、outline、背景色等属性。浏览器会根据元素的新属性重新绘制，使元素呈现新的外观。重绘不会带来重新布局，并不一定伴随重排</div></pre></td></tr></table></figure></p>
+<p>什么是重排？<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">重排，也有人叫它为“回流”，英文名为“Reflow”。重排是更明显的一种改变，可以理解为渲染树需要重新计算。</div></pre></td></tr></table></figure></p>
+<p>重绘和重排有什么关系吗？<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">重排必定会发生重绘。</div></pre></td></tr></table></figure></p>
+<p>哪些行为会触发重绘？<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">	</div></pre></td></tr></table></figure></p>
+<p>哪些行为会触发重排？<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">网页初始化的时候；</div><div class="line">一些 Javascript 在操作 DOM Tree 时；</div><div class="line">其些元件的尺寸变了；</div><div class="line">CSS 的属性发生变化了，</div><div class="line">添加、删除或者改变DOM元素的可见性时</div><div class="line">添加、删除或者改变CSS样式，直接改变CSS、Style或者元素的class可能会影响布局。还有改变一个元素的宽度能够它所在的DOM节点中的所有元素，以及周围的哪些元素</div><div class="line">CSS3动画和过渡：动画的每一frame都会触发Reflow。</div><div class="line">读取DOM的属性同样会触发Reflow:</div><div class="line">比如offsetTop, offsetLeft, offsetWidth, offsetHeight, scrollTop/Left/Width/Height, clientTop/Left/Width/Height。</div><div class="line">用户交互：用户可以通过hover一下a 链接，在input里面输入文字，拖动浏览器的大小，改变字体大小，更换样式表或者字体等都会触发Reflow。</div></pre></td></tr></table></figure></p>
+<p>从浏览器渲染得到哪些前端优化建议？<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">1、不要为id选择器指定类名或是标签，因为id可以唯一确定一个元素。</div><div class="line">2、避免使用通配符</div><div class="line">3、不要一条一条地修改 DOM 的样式。与其这样，还不如预先定义好 css 的 class，然后修改 DOM 的 className。</div><div class="line">4、为动画的 HTML 元件使用 fixed 或 absoult 的 position，那么修改他们的 CSS 是不会 reflow 的。</div><div class="line">5、访问一个元素的属性会进行一次强制重排。因此为了提高性能，应该将读取元素属性的代码组织在一起。</div><div class="line">6、不要用inlineStyle或table布局,inlineStyle会在html下载完成后进行一次额外的Reflow，table布局的开销远比其他DOM元素的布局开销更大。</div><div class="line">7、每次修改元素的style的属性：</div><div class="line">使用更改className的方式替换style.xxx=xxx的方式</div><div class="line">使用style.cssText=<span class="string">""</span>一次写入样式</div><div class="line">避免设置过多的行内样式</div><div class="line">添加的结构外元素设置它们的位置为fiexd或absolute</div><div class="line">避免使用表格来布局</div><div class="line">避免在CSS中使用javascript expression</div><div class="line">8、将获取的DOM数据缓存起来。这种方法，对获取那些会触发回流操作的属性（比如offsetWidth）尤为重要</div><div class="line">7、当对HTMLCollection对象进行操作时，应该将访问的次数尽肯能的降至最低，最简单的，你可以将length属性缓存在一个本地变量，这样就能大幅度的提高循环的效率。</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/06/12/前端知识-浏览器渲染/" class="archive-article-date">
+  	<time datetime="2016-06-12T07:58:44.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-06-12</time>
+</a>
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2016/09/28/JavaScript-3运算符/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/06/12/html-表单/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">表单</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+
+
+
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 yunkai
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: false,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/"
+	}
+</script>
+
+<script src="/./main.js"></script>
+
+
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
+    
+    
+      <li data-hook="tools-section-friends"><span class="text">友链</span><i class="icon-link"></i></li>
+    
+    
+      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+    				
+    			</div>
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-friends">
+  		
+  			<div class="friends-wrap" id="js-friends">
+  			
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接1</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接2</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接3</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接4</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接5</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接6</a>
+  	        
+  	        </div>
+  		
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-me">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>

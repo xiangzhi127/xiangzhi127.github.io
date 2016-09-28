@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>web缓存 | 我的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1、web缓存1234567891011121314151617181920212223242526272829web缓存分为很多种。比如数据库缓存、代理服务器缓存、CDN缓存、浏览器缓存。下面主要谈谈浏览器缓存，其他的以后再聊。1、首先我们要了解浏览器缓存的好处。浏览器缓存是将文件保存在客户端，好的缓存策略可以减少对网络带宽的占用，可以提高访问速度，提高用户的体验，还可以减轻服务器的负担。2、缓">
+<meta property="og:type" content="article">
+<meta property="og:title" content="web缓存">
+<meta property="og:url" content="http://xiangzhi127.github.io/2016/06/12/前端优化-web缓存/index.html">
+<meta property="og:site_name" content="我的博客">
+<meta property="og:description" content="1、web缓存1234567891011121314151617181920212223242526272829web缓存分为很多种。比如数据库缓存、代理服务器缓存、CDN缓存、浏览器缓存。下面主要谈谈浏览器缓存，其他的以后再聊。1、首先我们要了解浏览器缓存的好处。浏览器缓存是将文件保存在客户端，好的缓存策略可以减少对网络带宽的占用，可以提高访问速度，提高用户的体验，还可以减轻服务器的负担。2、缓">
+<meta property="og:updated_time" content="2016-08-23T12:14:26.193Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="web缓存">
+<meta name="twitter:description" content="1、web缓存1234567891011121314151617181920212223242526272829web缓存分为很多种。比如数据库缓存、代理服务器缓存、CDN缓存、浏览器缓存。下面主要谈谈浏览器缓存，其他的以后再聊。1、首先我们要了解浏览器缓存的好处。浏览器缓存是将文件保存在客户端，好的缓存策略可以减少对网络带宽的占用，可以提高访问速度，提高用户的体验，还可以减轻服务器的负担。2、缓">
+  
+    <link rel="alternative" href="/atom.xml" title="我的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="//favicon.png">
+  
+  <script src="/style.js"></script>
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="null" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">yunkai</a></h1>
+		</hgroup>
+
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/随笔">随笔</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">友链</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="3" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="#" title="github">github</a>
+		        
+					<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+		        
+					<a class="rss" target="_blank" href="#" title="rss">rss</a>
+		        
+					<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-list"></i></div>
+  		<h1 class="header-author js-mobile-header hide">yunkai</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="null" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">yunkai</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/随笔">随笔</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        <article id="post-前端优化-web缓存" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      web缓存
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1、web缓存<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">web缓存分为很多种。比如数据库缓存、代理服务器缓存、CDN缓存、浏览器缓存。下面主要谈谈浏览器缓存，其他的以后再聊。</div><div class="line">1、首先我们要了解浏览器缓存的好处。</div><div class="line">浏览器缓存是将文件保存在客户端，好的缓存策略可以减少对网络带宽的占用，可以提高访问速度，提高用户的体验，还可以减轻服务器的负担。</div><div class="line">2、缓存存在的问题</div><div class="line">既然存在了本地，那么最大的问题就是一旦服务器的文件更新了，而浏览器还在使用本地的缓存，会造成服务器端的修改不能生效。</div><div class="line">3、缓存协商</div><div class="line">   缓存的文件是由服务器生成，在本地保存，所以对缓存的使用必须要双方配合才能达到最好的效果，这样就引入了缓存协商。</div><div class="line">缓存协商其实就是浏览器在请求某个文件的时候，服务器在返回时会在响应头部加一些额外的信息，比如这个文件在多长时间内可以使用（Expires）、文件的最后修改时间是什么（Last-modified）、控制缓存的行为（Cache-Control）、资源的匹配信息（ETag）等等，浏览器在下次再请求这个文件的就会根据之前服务器在头部加入的额外信息来对应的进行一些处理，比如在请求头加上控制缓存的行为（Cache-Control）、比较资源最后更新的时间是否一致（<span class="keyword">if</span>-Modified-Since）、比较ETag是否不一致（<span class="keyword">if</span>-None-Match）等等。</div><div class="line">4、Cache-Control:</div><div class="line">max-age（单位为s）：制定设置缓存最大的有效时间，定义的是时间长短。当浏览器向服务器发送请求后，在max-age这段时间里浏览器就不会向服务器发送请求了，max-age用于普通缓存。</div><div class="line">s-maxage（单位为s）：同max-age,只用于共享缓存（比如CDN缓存），s-maxage用于代理缓存。如果存在s-maxage，则会覆盖代max-age和Expries header。</div><div class="line">public ：指定响应会被缓存，并且在多用户间共享。</div><div class="line">private ：响应指作为私有的缓存，不能再用户间共享。</div><div class="line">no-cache ：指定不缓存响应，表明资源不进行缓存，但是设置了no-cache之后并不代表浏览器不缓存，而是在缓存前要向服务器确定资源是否被更改。</div><div class="line">no-store ：一看就知道如果用了这个命令当然就是不会进行缓存了，每次请求资源都要从服务器重新获取。</div><div class="line">must-revalidate ：指定如果页面是过期的，则去服务器进行获取。</div><div class="line">5、Expires：</div><div class="line">缓存过期时间，用来指定资源到期的时间，是服务器端的具体的时间点。在这个时间之前，不会再去想服务器发任何请求，直接用本地缓存</div><div class="line">6、Last-modified:</div><div class="line">在浏览器第一次请求页面的时候，如果返回的header中有这一项的值，则在下次请求的头信息中会加入<span class="keyword">if</span>-modified-since这个值，服务器端取到这个值后去判断和该文件的最后修改时间是否一样，如果一样，则直接返回304（not modified），通知浏览器可以使用本地缓存。</div><div class="line">7、ETag：</div><div class="line">在浏览器第一次请求页面的时候，如果返回的header中有这一项的值，则在下次请求的头信息中会加入<span class="keyword">if</span>-None-match这个值，服务器端取到这个值后去和这个文件生成的E-tag值进行对比，如果一样，则直接返回304（not modified），通知浏览器可以使用本地缓存。Etag默认生成规则是根据文件的inode、文件大小、文件修改时间，可以通过配置选择其中的某几项来生成</div><div class="line">8、缓存相关header的关系</div><div class="line">Cache-control会覆盖掉Expires的值，即如果同时存在cache-control:max-age和expires，则以cache-control的值为准。</div><div class="line">Etag和last-modified的值同时存在的时候，last-modified的值失效，仅判断Etag。</div><div class="line">9、一些操作</div><div class="line">在F5刷新的时候不论缓存过不过期都会和服务器进行缓存协商（带上Etag、last-modified之类的信息）</div><div class="line">在ctrl+F5的时候直接在浏览器单方面决定不使用缓存（直接cache-control:no-cache）</div><div class="line">在后退的时候除非显式的声明no-cache，否则都会使用缓存（不论是否过期）</div></pre></td></tr></table></figure></p>
+<p>2、浏览器http的缓存机制<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">1、通用首部字段（就是请求报文和响应都能用上的字段）</div><div class="line">Cache-Control：控制缓存的行为</div><div class="line">Pragama：http1.0的旧社会遗留物，值为“no-cache”时禁用缓存</div><div class="line">2、请求首部字段</div><div class="line"><span class="keyword">if</span>-Match：比较ETag是否一致</div><div class="line"><span class="keyword">if</span>-None-Match：比较ETag是否不一致</div><div class="line"><span class="keyword">if</span>-Modified-Since：比较资源最后更新的时间是否一致</div><div class="line"><span class="keyword">if</span>-Unmodified-Since:比较资源最后更新的时间是否不一致</div><div class="line">3、响应首部字段</div><div class="line">ETag：资源的匹配信息</div><div class="line">4、实体首部字段</div><div class="line">Expires:http1.0的遗留物，实体主体过期时间</div><div class="line">last-Modified：资源的最后一次修改时间</div></pre></td></tr></table></figure></p>
+<p>3、如何用HTTP Caching优化网站<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">1、用Last-Modified头</div><div class="line">Last-Modified与<span class="keyword">if</span>-Modified-since对应的，前者是响应头，后者是请求头。</div><div class="line">2、用Etag头</div><div class="line">Etag与If-None-Match是对应的，前者是响应头，后者是请求头</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/06/12/前端优化-web缓存/" class="archive-article-date">
+  	<time datetime="2016-06-12T07:51:03.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-06-12</time>
+</a>
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2016/06/12/html-表单/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          表单
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/06/12/jQuery-4DOM和css操作/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+
+
+
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 yunkai
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: false,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/"
+	}
+</script>
+
+<script src="/./main.js"></script>
+
+
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
+    
+    
+      <li data-hook="tools-section-friends"><span class="text">友链</span><i class="icon-link"></i></li>
+    
+    
+      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+    				
+    			</div>
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-friends">
+  		
+  			<div class="friends-wrap" id="js-friends">
+  			
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接1</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接2</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接3</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接4</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接5</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接6</a>
+  	        
+  	        </div>
+  		
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-me">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>

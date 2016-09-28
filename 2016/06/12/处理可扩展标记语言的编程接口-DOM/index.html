@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>dom | 我的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1、Node类型12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182831、Node.ELEMENT_NODE:12、Node.ATTRIBU">
+<meta property="og:type" content="article">
+<meta property="og:title" content="dom">
+<meta property="og:url" content="http://xiangzhi127.github.io/2016/06/12/处理可扩展标记语言的编程接口-DOM/index.html">
+<meta property="og:site_name" content="我的博客">
+<meta property="og:description" content="1、Node类型12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182831、Node.ELEMENT_NODE:12、Node.ATTRIBU">
+<meta property="og:updated_time" content="2016-08-26T00:07:00.568Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="dom">
+<meta name="twitter:description" content="1、Node类型12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182831、Node.ELEMENT_NODE:12、Node.ATTRIBU">
+  
+    <link rel="alternative" href="/atom.xml" title="我的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="//favicon.png">
+  
+  <script src="/style.js"></script>
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="null" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">yunkai</a></h1>
+		</hgroup>
+
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/随笔">随笔</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">友链</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="3" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="#" title="github">github</a>
+		        
+					<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+		        
+					<a class="rss" target="_blank" href="#" title="rss">rss</a>
+		        
+					<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-list"></i></div>
+  		<h1 class="header-author js-mobile-header hide">yunkai</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="null" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">yunkai</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/随笔">随笔</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        <article id="post-处理可扩展标记语言的编程接口-DOM" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      dom
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1、Node类型<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div></pre></td><td class="code"><pre><div class="line">1、Node.ELEMENT_NODE:1</div><div class="line">2、Node.ATTRIBUTE_NODE:2</div><div class="line">3、Node.TEXT_NODE:3</div><div class="line">4、Node.CDATE_SECTION_NODE:4</div><div class="line">5、Node.ENTITY_REFERNCE_NODE:5</div><div class="line">6、Node.ENTITY_NODE:6</div><div class="line">7、Node.PROVESSING_INSTAUCTION_NODE:7</div><div class="line">8、Node.COMMENT_NODE:8</div><div class="line">9、Node.DOCUMENT_NODE:9</div><div class="line">10、Node.DOCUMENT_TYPE_NODE:10</div><div class="line">11、Node.DOCUMENT_FRAGMENT_NODE:11</div><div class="line">12、Node.NOTATION_NODE:12</div><div class="line">Element类型：</div><div class="line">（1）nodeType为1</div><div class="line">（2）nodeName为元素标签名，tagName也是返回标签名</div><div class="line">（3）nodeValue为null</div><div class="line">（4）parentNode可能是Document或Element</div><div class="line">（5）子节点可能是Element、Text、Comment、Processing_Instruction、CDATASection、EntityReference</div><div class="line">Text类型：</div><div class="line">Text表示文本节点，它包含的纯文本内容，不能包含html代码，但可以包含转义后的html代码。</div><div class="line">（1）nodeType:3</div><div class="line">（2）nodeName为<span class="comment">#text</span></div><div class="line">（3）nodeValue为文本内容</div><div class="line">（4）parentNode是一个Element</div><div class="line">（5）没有子节点</div><div class="line">Attr类型：</div><div class="line">Attr类型表示元素的特性，相当于元素的attributes属性中的节点</div><div class="line">（1）nodeType:2</div><div class="line">（2）nodeName是特性的名称</div><div class="line">（3）nodeValue是特性的值</div><div class="line">（4）parentNode为null</div><div class="line">Comment类型：</div><div class="line">Comment表示HTML文档中的注释</div><div class="line">（1）nodeType：8</div><div class="line">（2）nodeName为<span class="comment">#Comment</span></div><div class="line">（3）nodeValue为注释的内容</div><div class="line">（4）parentNode可能是Document或Element</div><div class="line">（5）没有子节点</div><div class="line">Document</div><div class="line">（1）nodeType为9</div><div class="line">（2）nodeName为<span class="comment">#document</span></div><div class="line">（3）nodeValue为null</div><div class="line">（4）parentNode为null</div><div class="line">（5）子节点可能是一个DocumentType或Element</div><div class="line">DocumentFragment类型</div><div class="line">（1）nodeType：11</div><div class="line">（2）nodeName为<span class="comment">#document-fragment</span></div><div class="line">（3）nodeValue为null</div><div class="line">（4）parentNode为null</div><div class="line">节点创建型api</div><div class="line">（1）creatElement</div><div class="line">（2）createTextNode</div><div class="line">（3）<span class="built_in">clone</span>Node</div><div class="line">（4）createDocumentFragment</div><div class="line">页面修改型API</div><div class="line">（1）appendChild</div><div class="line">（2）insertBefore</div><div class="line">（3）removeChild</div><div class="line">（4）replaceChild</div><div class="line">节点查询型API</div><div class="line">（1）document.getElementById</div><div class="line">（2）document.getElementByTagName</div><div class="line">（3）docuemnt.getElemntsByName</div><div class="line">（4）docuemnt.getElementsByClassName</div><div class="line">（5）document.querySelector/document.querySelectorAll</div><div class="line">节点关系型api</div><div class="line">（1）parentNode</div><div class="line">（2）parentElement</div><div class="line">（3）previousSibling</div><div class="line">（4）previousElementSibling</div><div class="line">（5）nextSibling</div><div class="line">（6）nextElementSibling</div><div class="line">（7）childNodes</div><div class="line">（8）childen</div><div class="line">（9）firstNode</div><div class="line">（10）lastNode</div><div class="line">（11）hasChildNodes</div><div class="line">元素属性型API</div><div class="line">（1）<span class="built_in">set</span>Attribute</div><div class="line">（2）getAttribute</div><div class="line">元素样式型API</div><div class="line">（1）window.getComputedStyle</div><div class="line">（2）getBoundingClientRect</div></pre></td></tr></table></figure></p>
+<p>2、绑定事件整理<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">1、直接写在元素标签之中</div><div class="line">2、el.onclick=<span class="function"><span class="title">function</span></span>()&#123;&#125;</div><div class="line">缺点：</div><div class="line">该方法绑定事件所执行的回调函数只允许一个，倘若绑定了两个，那么第二个将覆盖掉对于第一个的绑定。</div><div class="line">该方法只支持事件冒泡</div><div class="line">在ie下该方式的回调函数，并不能像我们往常一样，拥有时间对象参数</div><div class="line">该方式对于dom3的部分新增事件不支持</div><div class="line">3、dom2绑定事件</div><div class="line">ie：el.attachEvent(<span class="string">'on'</span>+<span class="built_in">type</span>,callback)</div></pre></td></tr></table></figure></p>
+<p>3、document.readyState<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">document.readyState:判断文档是否加载完成。firefox不支持。这个属性是只读的，传回值有以下的可能：</div><div class="line">0-uninitialized：XML 对象被产生，但没有任何文件被加载。</div><div class="line">1-loading：加载程序进行中，但文件尚未开始解析。</div><div class="line">2-loaded：部分的文件已经加载且进行解析，但对象模型尚未生效。</div><div class="line">3-interactive：仅对已加载的部分文件有效，在此情况下，对象模型是有效但只读的。</div><div class="line">4-complete：文件已完全加载，代表加载成功。</div><div class="line">document.onreadystatechange：当页面加载状态改变的时候执行这个方法。</div></pre></td></tr></table></figure></p>
+<p>4、DOM中的property和attribute的区别<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">1、property是DOM中的属性，是JavaScript里的对象。</div><div class="line">2、attribute是html标签上的特性，它的值只能够是字符串。 </div><div class="line">创建时：</div><div class="line">1、DOM对象初始化时会创建默认的基本property。</div><div class="line">2、只有在HTML标签中定义的特性才会被保存在property的attributes属性中。</div><div class="line">3、attribute会初始化property中的同名属性，但自定义的attribute不会出现在property中。</div><div class="line">4、attribute的值都是字符串。</div><div class="line">数据绑定：</div><div class="line">1、attribute的数据会同步到property上，然而property的更改不会改变attribute</div><div class="line">2、对于value、class这样的属性/特性，数据绑定的方向是单向的，attribute-&gt;property</div><div class="line">3、对于id而言，数据绑定是双向的，attribute&lt;=&gt;property</div><div class="line">使用：</div><div class="line">1、可以使用DOM的<span class="built_in">set</span>Attribute方法来同时更新attribute；</div><div class="line">2、直接访问attribute上的值会得到一个Attr对象，而通过getAttribute方法则会直接得到attribute的值</div><div class="line">3、jQuery.attr是通过<span class="built_in">set</span>Attribute实现的，而jQuery.prop则会直接访问DOM对象的property</div><div class="line">最后，得出，property是DOM对象自身就拥有的属性，而attribute是通过我们设置html标签而给之赋予的特性。</div></pre></td></tr></table></figure></p>
+<p>5、DOM的属性值(property)<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div><div class="line">177</div><div class="line">178</div><div class="line">179</div><div class="line">180</div><div class="line">181</div><div class="line">182</div><div class="line">183</div><div class="line">184</div><div class="line">185</div><div class="line">186</div><div class="line">187</div><div class="line">188</div><div class="line">189</div><div class="line">190</div><div class="line">191</div><div class="line">192</div><div class="line">193</div><div class="line">194</div><div class="line">195</div><div class="line">196</div><div class="line">197</div><div class="line">198</div><div class="line">199</div><div class="line">200</div><div class="line">201</div><div class="line">202</div><div class="line">203</div><div class="line">204</div><div class="line">205</div><div class="line">206</div><div class="line">207</div><div class="line">208</div><div class="line">209</div><div class="line">210</div><div class="line">211</div><div class="line">212</div><div class="line">213</div><div class="line">214</div><div class="line">215</div><div class="line">216</div><div class="line">217</div><div class="line">218</div></pre></td><td class="code"><pre><div class="line">div.align=</div><div class="line">div.title=</div><div class="line">div.lang=</div><div class="line">div.translate=<span class="literal">true</span></div><div class="line">div.dir=</div><div class="line">div.dataset=[object DOMStringMap]</div><div class="line">div.hidden=<span class="literal">false</span></div><div class="line">div.tabIndex=-1</div><div class="line">div.accessKey=</div><div class="line">div.draggable=<span class="literal">false</span></div><div class="line">div.spellcheck=<span class="literal">true</span></div><div class="line">div.contentEditable=inherit</div><div class="line">div.isContentEditable=<span class="literal">false</span></div><div class="line">div.offsetParent=[object HTMLBodyElement]</div><div class="line">div.offsetTop=8</div><div class="line">div.offsetLeft=8</div><div class="line">div.offsetWidth=964</div><div class="line">div.offsetHeight=0</div><div class="line">div.style=[object CSSStyleDeclaration]</div><div class="line">div.innerText=</div><div class="line">div.outerText=</div><div class="line">div.webkitdropzone=</div><div class="line">div.onabort=null</div><div class="line">div.onblur=null</div><div class="line">div.oncancel=null</div><div class="line">div.oncanplay=null</div><div class="line">div.oncanplaythrough=null</div><div class="line">div.onchange=null</div><div class="line">div.onclick=null</div><div class="line">div.onclose=null</div><div class="line">div.oncontextmenu=null</div><div class="line">div.oncuechange=null</div><div class="line">div.ondblclick=null</div><div class="line">div.ondrag=null</div><div class="line">div.ondragend=null</div><div class="line">div.ondragenter=null</div><div class="line">div.ondragleave=null</div><div class="line">div.ondragover=null</div><div class="line">div.ondragstart=null</div><div class="line">div.ondrop=null</div><div class="line">div.ondurationchange=null</div><div class="line">div.onemptied=null</div><div class="line">div.onended=null</div><div class="line">div.onerror=null</div><div class="line">div.onfocus=null</div><div class="line">div.oninput=null</div><div class="line">div.oninvalid=null</div><div class="line">div.onkeydown=null</div><div class="line">div.onkeypress=null</div><div class="line">div.onkeyup=null</div><div class="line">div.onload=null</div><div class="line">div.onloadeddata=null</div><div class="line">div.onloadedmetadata=null</div><div class="line">div.onloadstart=null</div><div class="line">div.onmousedown=null</div><div class="line">div.onmouseenter=null</div><div class="line">div.onmouseleave=null</div><div class="line">div.onmousemove=null</div><div class="line">div.onmouseout=null</div><div class="line">div.onmouseover=null</div><div class="line">div.onmouseup=null</div><div class="line">div.onmousewheel=null</div><div class="line">div.onpause=null</div><div class="line">div.onplay=null</div><div class="line">div.onplaying=null</div><div class="line">div.onprogress=null</div><div class="line">div.onratechange=null</div><div class="line">div.onreset=null</div><div class="line">div.onresize=null</div><div class="line">div.onscroll=null</div><div class="line">div.onseeked=null</div><div class="line">div.onseeking=null</div><div class="line">div.onselect=null</div><div class="line">div.onshow=null</div><div class="line">div.onstalled=null</div><div class="line">div.onsubmit=null</div><div class="line">div.onsuspend=null</div><div class="line">div.ontimeupdate=null</div><div class="line">div.ontoggle=null</div><div class="line">div.onvolumechange=null</div><div class="line">div.onwaiting=null</div><div class="line">div.click=<span class="keyword">function</span> <span class="function"><span class="title">click</span></span>() &#123; [native code] &#125;</div><div class="line">div.focus=<span class="keyword">function</span> <span class="function"><span class="title">focus</span></span>() &#123; [native code] &#125;</div><div class="line">div.blur=<span class="keyword">function</span> <span class="function"><span class="title">blur</span></span>() &#123; [native code] &#125;</div><div class="line">div.ontouchcancel=null</div><div class="line">div.ontouchend=null</div><div class="line">div.ontouchmove=null</div><div class="line">div.ontouchstart=null</div><div class="line">div.namespaceURI=http://www.w3.org/1999/xhtml</div><div class="line">div.prefix=null</div><div class="line">div.localName=div</div><div class="line">div.tagName=DIV</div><div class="line">div.id=<span class="built_in">test</span></div><div class="line">div.className=</div><div class="line">div.classList=</div><div class="line">div.attributes=[object NamedNodeMap]</div><div class="line">div.innerHTML=</div><div class="line">div.outerHTML=&lt;div id=<span class="string">"test"</span>&gt;&lt;/div&gt;</div><div class="line">div.shadowRoot=null</div><div class="line">div.scrollTop=0</div><div class="line">div.scrollLeft=0</div><div class="line">div.scrollWidth=964</div><div class="line">div.scrollHeight=0</div><div class="line">div.clientTop=0</div><div class="line">div.clientLeft=0</div><div class="line">div.clientWidth=964</div><div class="line">div.clientHeight=0</div><div class="line">div.onbeforecopy=null</div><div class="line">div.onbeforecut=null</div><div class="line">div.onbeforepaste=null</div><div class="line">div.oncopy=null</div><div class="line">div.oncut=null</div><div class="line">div.onpaste=null</div><div class="line">div.onsearch=null</div><div class="line">div.onselectstart=null</div><div class="line">div.onwheel=null</div><div class="line">div.onwebkitfullscreenchange=null</div><div class="line">div.onwebkitfullscreenerror=null</div><div class="line">div.previousElementSibling=null</div><div class="line">div.nextElementSibling=[object HTMLScriptElement]</div><div class="line">div.children=[object HTMLCollection]</div><div class="line">div.firstElementChild=null</div><div class="line">div.lastElementChild=null</div><div class="line">div.childElementCount=0</div><div class="line">div.hasAttributes=<span class="keyword">function</span> <span class="function"><span class="title">hasAttributes</span></span>() &#123; [native code] &#125;</div><div class="line">div.getAttribute=<span class="keyword">function</span> <span class="function"><span class="title">getAttribute</span></span>() &#123; [native code] &#125;</div><div class="line">div.getAttributeNS=<span class="keyword">function</span> <span class="function"><span class="title">getAttributeNS</span></span>() &#123; [native code] &#125;</div><div class="line">div.setAttribute=<span class="keyword">function</span> <span class="function"><span class="title">setAttribute</span></span>() &#123; [native code] &#125;</div><div class="line">div.setAttributeNS=<span class="keyword">function</span> <span class="function"><span class="title">setAttributeNS</span></span>() &#123; [native code] &#125;</div><div class="line">div.removeAttribute=<span class="keyword">function</span> <span class="function"><span class="title">removeAttribute</span></span>() &#123; [native code] &#125;</div><div class="line">div.removeAttributeNS=<span class="keyword">function</span> <span class="function"><span class="title">removeAttributeNS</span></span>() &#123; [native code] &#125;</div><div class="line">div.hasAttribute=<span class="keyword">function</span> <span class="function"><span class="title">hasAttribute</span></span>() &#123; [native code] &#125;</div><div class="line">div.hasAttributeNS=<span class="keyword">function</span> <span class="function"><span class="title">hasAttributeNS</span></span>() &#123; [native code] &#125;</div><div class="line">div.getAttributeNode=<span class="keyword">function</span> <span class="function"><span class="title">getAttributeNode</span></span>() &#123; [native code] &#125;</div><div class="line">div.getAttributeNodeNS=<span class="keyword">function</span> <span class="function"><span class="title">getAttributeNodeNS</span></span>() &#123; [native code] &#125;</div><div class="line">div.setAttributeNode=<span class="keyword">function</span> <span class="function"><span class="title">setAttributeNode</span></span>() &#123; [native code] &#125;</div><div class="line">div.setAttributeNodeNS=<span class="keyword">function</span> <span class="function"><span class="title">setAttributeNodeNS</span></span>() &#123; [native code] &#125;</div><div class="line">div.removeAttributeNode=<span class="keyword">function</span> <span class="function"><span class="title">removeAttributeNode</span></span>() &#123; [native code] &#125;</div><div class="line">div.closest=<span class="keyword">function</span> <span class="function"><span class="title">closest</span></span>() &#123; [native code] &#125;</div><div class="line">div.matches=<span class="keyword">function</span> <span class="function"><span class="title">matches</span></span>() &#123; [native code] &#125;</div><div class="line">div.webkitMatchesSelector=<span class="keyword">function</span> <span class="function"><span class="title">webkitMatchesSelector</span></span>() &#123; [native code] &#125;</div><div class="line">div.getElementsByTagName=<span class="keyword">function</span> <span class="function"><span class="title">getElementsByTagName</span></span>() &#123; [native code] &#125;</div><div class="line">div.getElementsByTagNameNS=<span class="keyword">function</span> <span class="function"><span class="title">getElementsByTagNameNS</span></span>() &#123; [native code] &#125;</div><div class="line">div.getElementsByClassName=<span class="keyword">function</span> <span class="function"><span class="title">getElementsByClassName</span></span>() &#123; [native code] &#125;</div><div class="line">div.insertAdjacentElement=<span class="keyword">function</span> <span class="function"><span class="title">insertAdjacentElement</span></span>() &#123; [native code] &#125;</div><div class="line">div.insertAdjacentText=<span class="keyword">function</span> <span class="function"><span class="title">insertAdjacentText</span></span>() &#123; [native code] &#125;</div><div class="line">div.insertAdjacentHTML=<span class="keyword">function</span> <span class="function"><span class="title">insertAdjacentHTML</span></span>() &#123; [native code] &#125;</div><div class="line">div.createShadowRoot=<span class="keyword">function</span> <span class="function"><span class="title">createShadowRoot</span></span>() &#123; [native code] &#125;</div><div class="line">div.getDestinationInsertionPoints=<span class="keyword">function</span> <span class="function"><span class="title">getDestinationInsertionPoints</span></span>() &#123; [native code] &#125;</div><div class="line">div.requestPointerLock=<span class="keyword">function</span> <span class="function"><span class="title">requestPointerLock</span></span>() &#123; [native code] &#125;</div><div class="line">div.getClientRects=<span class="keyword">function</span> <span class="function"><span class="title">getClientRects</span></span>() &#123; [native code] &#125;</div><div class="line">div.getBoundingClientRect=<span class="keyword">function</span> <span class="function"><span class="title">getBoundingClientRect</span></span>() &#123; [native code] &#125;</div><div class="line">div.scrollIntoView=<span class="keyword">function</span> <span class="function"><span class="title">scrollIntoView</span></span>() &#123; [native code] &#125;</div><div class="line">div.scrollIntoViewIfNeeded=<span class="keyword">function</span> <span class="function"><span class="title">scrollIntoViewIfNeeded</span></span>() &#123; [native code] &#125;</div><div class="line">div.animate=<span class="keyword">function</span> <span class="function"><span class="title">animate</span></span>() &#123; [native code] &#125;</div><div class="line">div.remove=<span class="keyword">function</span> <span class="function"><span class="title">remove</span></span>() &#123; [native code] &#125;</div><div class="line">div.webkitRequestFullScreen=<span class="keyword">function</span> <span class="function"><span class="title">webkitRequestFullScreen</span></span>() &#123; [native code] &#125;</div><div class="line">div.webkitRequestFullscreen=<span class="keyword">function</span> <span class="function"><span class="title">webkitRequestFullscreen</span></span>() &#123; [native code] &#125;</div><div class="line">div.querySelector=<span class="keyword">function</span> <span class="function"><span class="title">querySelector</span></span>() &#123; [native code] &#125;</div><div class="line">div.querySelectorAll=<span class="keyword">function</span> <span class="function"><span class="title">querySelectorAll</span></span>() &#123; [native code] &#125;</div><div class="line">div.assignedSlot=null</div><div class="line">div.slot=</div><div class="line">div.attachShadow=<span class="keyword">function</span> <span class="function"><span class="title">attachShadow</span></span>() &#123; [native code] &#125;</div><div class="line">div.before=<span class="keyword">function</span> <span class="function"><span class="title">before</span></span>() &#123; [native code] &#125;</div><div class="line">div.after=<span class="keyword">function</span> <span class="function"><span class="title">after</span></span>() &#123; [native code] &#125;</div><div class="line">div.replaceWith=<span class="keyword">function</span> <span class="function"><span class="title">replaceWith</span></span>() &#123; [native code] &#125;</div><div class="line">div.prepend=<span class="keyword">function</span> <span class="function"><span class="title">prepend</span></span>() &#123; [native code] &#125;</div><div class="line">div.append=<span class="keyword">function</span> <span class="function"><span class="title">append</span></span>() &#123; [native code] &#125;</div><div class="line">div.ELEMENT_NODE=1</div><div class="line">div.ATTRIBUTE_NODE=2</div><div class="line">div.TEXT_NODE=3</div><div class="line">div.CDATA_SECTION_NODE=4</div><div class="line">div.ENTITY_REFERENCE_NODE=5</div><div class="line">div.ENTITY_NODE=6</div><div class="line">div.PROCESSING_INSTRUCTION_NODE=7</div><div class="line">div.COMMENT_NODE=8</div><div class="line">div.DOCUMENT_NODE=9</div><div class="line">div.DOCUMENT_TYPE_NODE=10</div><div class="line">div.DOCUMENT_FRAGMENT_NODE=11</div><div class="line">div.NOTATION_NODE=12</div><div class="line">div.DOCUMENT_POSITION_DISCONNECTED=1</div><div class="line">div.DOCUMENT_POSITION_PRECEDING=2</div><div class="line">div.DOCUMENT_POSITION_FOLLOWING=4</div><div class="line">div.DOCUMENT_POSITION_CONTAINS=8</div><div class="line">div.DOCUMENT_POSITION_CONTAINED_BY=16</div><div class="line">div.DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC=32</div><div class="line">div.nodeType=1</div><div class="line">div.nodeName=DIV</div><div class="line">div.baseURI=file:///C:/Users/Administrator/Desktop/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9/test.html</div><div class="line">div.isConnected=<span class="literal">true</span></div><div class="line">div.ownerDocument=[object HTMLDocument]</div><div class="line">div.parentNode=[object HTMLBodyElement]</div><div class="line">div.parentElement=[object HTMLBodyElement]</div><div class="line">div.childNodes=[object NodeList]</div><div class="line">div.firstChild=null</div><div class="line">div.lastChild=null</div><div class="line">div.previousSibling=[object Text]</div><div class="line">div.nextSibling=[object Text]</div><div class="line">div.nodeValue=null</div><div class="line">div.textContent=</div><div class="line">div.hasChildNodes=<span class="keyword">function</span> <span class="function"><span class="title">hasChildNodes</span></span>() &#123; [native code] &#125;</div><div class="line">div.getRootNode=<span class="keyword">function</span> <span class="function"><span class="title">getRootNode</span></span>() &#123; [native code] &#125;</div><div class="line">div.normalize=<span class="keyword">function</span> <span class="function"><span class="title">normalize</span></span>() &#123; [native code] &#125;</div><div class="line">div.cloneNode=<span class="keyword">function</span> <span class="function"><span class="title">cloneNode</span></span>() &#123; [native code] &#125;</div><div class="line">div.isEqualNode=<span class="keyword">function</span> <span class="function"><span class="title">isEqualNode</span></span>() &#123; [native code] &#125;</div><div class="line">div.isSameNode=<span class="keyword">function</span> <span class="function"><span class="title">isSameNode</span></span>() &#123; [native code] &#125;</div><div class="line">div.compareDocumentPosition=<span class="keyword">function</span> <span class="function"><span class="title">compareDocumentPosition</span></span>() &#123; [native code] &#125;</div><div class="line">div.contains=<span class="keyword">function</span> <span class="function"><span class="title">contains</span></span>() &#123; [native code] &#125;</div><div class="line">div.lookupPrefix=<span class="keyword">function</span> <span class="function"><span class="title">lookupPrefix</span></span>() &#123; [native code] &#125;</div><div class="line">div.lookupNamespaceURI=<span class="keyword">function</span> <span class="function"><span class="title">lookupNamespaceURI</span></span>() &#123; [native code] &#125;</div><div class="line">div.isDefaultNamespace=<span class="keyword">function</span> <span class="function"><span class="title">isDefaultNamespace</span></span>() &#123; [native code] &#125;</div><div class="line">div.insertBefore=<span class="keyword">function</span> <span class="function"><span class="title">insertBefore</span></span>() &#123; [native code] &#125;</div><div class="line">div.appendChild=<span class="keyword">function</span> <span class="function"><span class="title">appendChild</span></span>() &#123; [native code] &#125;</div><div class="line">div.replaceChild=<span class="keyword">function</span> <span class="function"><span class="title">replaceChild</span></span>() &#123; [native code] &#125;</div><div class="line">div.removeChild=<span class="keyword">function</span> <span class="function"><span class="title">removeChild</span></span>() &#123; [native code] &#125;</div><div class="line">div.addEventListener=<span class="keyword">function</span> <span class="function"><span class="title">addEventListener</span></span>() &#123; [native code] &#125;</div><div class="line">div.removeEventListener=<span class="keyword">function</span> <span class="function"><span class="title">removeEventListener</span></span>() &#123; [native code] &#125;</div><div class="line">div.dispatchEvent=<span class="keyword">function</span> <span class="function"><span class="title">dispatchEvent</span></span>() &#123; [native code] &#125;</div></pre></td></tr></table></figure></p>
+<p>、offfsetWidth/offsetHeight<br>解析：获取元素的大小，与浏览器中的审查元素看到的尺寸一致<br>用法：obj.offsetWidth/offsetHeight<br>、clientWidth/clientHeght<br>解析：获取整个网页的可视区域大小，不包括滚动条。滚动条宽度为17px。<br>用法：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">document.documentElement.clientWidth/clientHeight;</div><div class="line">obj.offsetWidth/offsetHeight</div></pre></td></tr></table></figure></p>
+<p>、innerWidth/innerHeight<br>解析：获取整个网页的大小，包括不可见滚动区。<br>用法：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">window.innerWidth/innerHeight</div></pre></td></tr></table></figure></p>
+<p>、clientTop/clientLeft<br>解析：<br>用法：<br>、offsetTop/offsetLeft<br>解析：<br>用法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">、scrollTop/scrollLeft</div><div class="line">解析：</div><div class="line">用法：</div><div class="line">、scrollWidth/scrollHeight</div><div class="line">解析：滚动区域的宽度和高度，但不包括滚动条的宽度。滚动区域由padding和Content组成</div><div class="line">用法：</div><div class="line">、clientX/clientY</div><div class="line">解析：鼠标相对于整个页面的X/Y坐标。当页面产生滚动条时，对它们无影响。它们的最大值不会超过你页面的可视区域。</div><div class="line">测试：</div><div class="line">、screenX/screenY</div><div class="line">解析：screenX和screenY属性返回窗口相对于屏幕的X和Y坐标</div><div class="line">用法：</div><div class="line">、outerWidth/outerHeight</div><div class="line">解析：这是jquery里面的方法。获取元素的宽度和高度。宽度/高度=content+padding+border。当参数为true时，比如：outerWidth(ture)，这时的宽度/高度=content+padding+border+margin</div><div class="line">用法：</div><div class="line">``` bash</div><div class="line">	obj.outerWidht()/outerHeight()</div></pre></td></tr></table></figure></p>
+<p>、offseParent()<br>解析：offsetParent() 方法返回最近的祖先定位元素。定位元素指的是元素的 CSS position 属性被设置为 relative、absolute 或 fixed 的元素。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure></p>
+<p>、pageX/pageY<br>解析：鼠标相对于整个页面的X/Y坐标。当产生滚动条时，会有影响。<br>测试：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$(document).click(<span class="keyword">function</span>(e)&#123;</div><div class="line"> console.log(<span class="string">"X: "</span> + e.pageX + <span class="string">", Y: "</span> + e.pageY);</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<p>、offsetX/offsetY<br>解析：这个真的搞不懂。。。我想哭！<br>用法</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/06/12/处理可扩展标记语言的编程接口-DOM/" class="archive-article-date">
+  	<time datetime="2016-06-12T07:49:33.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-06-12</time>
+</a>
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2016/06/12/基于Nodejs模板引擎-jade/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          jade
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/06/12/数据库-MongoDB/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">MongoDB</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+
+
+
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 yunkai
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: false,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/"
+	}
+</script>
+
+<script src="/./main.js"></script>
+
+
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
+    
+    
+      <li data-hook="tools-section-friends"><span class="text">友链</span><i class="icon-link"></i></li>
+    
+    
+      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+    				
+    			</div>
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-friends">
+  		
+  			<div class="friends-wrap" id="js-friends">
+  			
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接1</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接2</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接3</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接4</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接5</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接6</a>
+  	        
+  	        </div>
+  		
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-me">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>

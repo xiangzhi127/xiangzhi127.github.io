@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>requirejs | 我的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1、RequireJS和seaJS的区别1231、两者定位差异。RequireJS 想成为浏览器的模块加载器，同时也想成为Rhino/Node等环境的模块加载器。SeaJS则专注于Web浏览器端。2、两者遵循的标准有差异。requireJS遵循的是AMD（异步模块定义）规范，SeaJS遵循的是CMD（通常模块定义）。规范不同，导致了两者API的不同。3、两者社区理念有差异。RequrieJS在尝试">
+<meta property="og:type" content="article">
+<meta property="og:title" content="requirejs">
+<meta property="og:url" content="http://xiangzhi127.github.io/2016/06/12/JavaScript模块加载器-requirejs/index.html">
+<meta property="og:site_name" content="我的博客">
+<meta property="og:description" content="1、RequireJS和seaJS的区别1231、两者定位差异。RequireJS 想成为浏览器的模块加载器，同时也想成为Rhino/Node等环境的模块加载器。SeaJS则专注于Web浏览器端。2、两者遵循的标准有差异。requireJS遵循的是AMD（异步模块定义）规范，SeaJS遵循的是CMD（通常模块定义）。规范不同，导致了两者API的不同。3、两者社区理念有差异。RequrieJS在尝试">
+<meta property="og:updated_time" content="2016-08-12T01:43:19.732Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="requirejs">
+<meta name="twitter:description" content="1、RequireJS和seaJS的区别1231、两者定位差异。RequireJS 想成为浏览器的模块加载器，同时也想成为Rhino/Node等环境的模块加载器。SeaJS则专注于Web浏览器端。2、两者遵循的标准有差异。requireJS遵循的是AMD（异步模块定义）规范，SeaJS遵循的是CMD（通常模块定义）。规范不同，导致了两者API的不同。3、两者社区理念有差异。RequrieJS在尝试">
+  
+    <link rel="alternative" href="/atom.xml" title="我的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="//favicon.png">
+  
+  <script src="/style.js"></script>
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="null" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">yunkai</a></h1>
+		</hgroup>
+
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/随笔">随笔</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">友链</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="3" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="#" title="github">github</a>
+		        
+					<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+		        
+					<a class="rss" target="_blank" href="#" title="rss">rss</a>
+		        
+					<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-list"></i></div>
+  		<h1 class="header-author js-mobile-header hide">yunkai</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="null" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">yunkai</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/随笔">随笔</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        <article id="post-JavaScript模块加载器-requirejs" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      requirejs
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1、RequireJS和seaJS的区别<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1、两者定位差异。RequireJS 想成为浏览器的模块加载器，同时也想成为Rhino/Node等环境的模块加载器。SeaJS则专注于Web浏览器端。</div><div class="line">2、两者遵循的标准有差异。requireJS遵循的是AMD（异步模块定义）规范，SeaJS遵循的是CMD（通常模块定义）。规范不同，导致了两者API的不同。</div><div class="line">3、两者社区理念有差异。RequrieJS在尝试让第三方类库修改自身来支持RequireJS，目前只有少数</div></pre></td></tr></table></figure></p>
+<p>2、js模块化要解决的问题<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div></pre></td><td class="code"><pre><div class="line">1、如何安全地包装一个模块的代码？（不污染模块外的任何代码）</div><div class="line">2、如何唯一标识一个模块？</div><div class="line">3、如何优雅的把模块的API暴露出去（不能增加全局变量）</div><div class="line">4、如何方便地使用所依赖的模块</div><div class="line">Modules/1.0规范</div><div class="line">1、模块的标识应遵循书写规则</div><div class="line">2、定义全局函数require，通过传入模块标识来引入其他模块，执行的结果即为别的模块暴露出来的API</div><div class="line">3、如果被require函数引入的模块中也包含依赖，那么依次加载这些依赖</div><div class="line">4、如果引入模块失败，那么require函数因该抱一个异常</div><div class="line">5、模块通过变量exports来向外暴露API，exports只能是一个对象，暴露的API需作为对象的属性。</div><div class="line">遵循common.js规范的代码是这样的：</div><div class="line">//math.js</div><div class="line">exports.add=<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">	var sum=0,i=0,args=arguments,l=args.length;</div><div class="line">	<span class="keyword">while</span>(i &lt; l)&#123;</div><div class="line">	sum+=args[i++]</div><div class="line">	&#125;</div><div class="line">	<span class="built_in">return</span> sum;</div><div class="line">&#125;</div><div class="line">//increment.js</div><div class="line">var add=require(<span class="string">'math'</span>).add;</div><div class="line">exports.increment=<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line"><span class="built_in">return</span> add(val ,1);</div><div class="line">&#125;</div><div class="line">//program.js</div><div class="line">var inc=require(<span class="string">'increment'</span>).increment;</div><div class="line">var a=1;</div><div class="line">inc(a);</div><div class="line">Modules/1.0规范源于服务端，无法直接用于浏览器端，原因有：</div><div class="line">1、外层没有<span class="keyword">function</span>包裹，变量全暴露在全局。</div><div class="line">2、资源的加载方式与服务端完全不同。服务端require一个模块，直接就从硬盘或者内存中读取了，消耗的时间可以忽略。而浏览器则不同，需要从服务端来下载这个文件，然后运行里面的代码才能得到API，需要花费一个HTTP请求，也就是说，require后面的一行代码可需要资源请求完成才能执行。由于浏览器端是以插入script标签的形式来加载资源的，没办法让代码同步执行。</div><div class="line">AMD/RequireJs</div><div class="line">1、用全局函数define来定义模块，用法为：define（id?,dependences?,factory）</div><div class="line">2、id为模块标识，遵循CommonJS Module Identifiers规范</div><div class="line">3、dependencies为依赖的模块数组，在factory中需传入形参与之一一对应</div><div class="line">4、如果dependerncies的值中有require、exports、module,则与commonjs中的实现保持一致</div><div class="line">5、如果dependencies省略不写，则默认为[<span class="string">"require"</span>，<span class="string">"exports"</span>,<span class="string">"module"</span>],factoty中也会默认传入require，exports,module</div><div class="line">6、如果factory为函数，模块对外暴露API的方法有三种：<span class="built_in">return</span>任意类型的数据、exports.xxx=xxx、module.exports=xxx</div><div class="line">7、如果factory为对象，则该对象极为模块的返回值。</div><div class="line">由于浏览器的环境特点，被依赖的模块肯定要预先下载的。</div><div class="line">被依赖的模块会被预先加载并且预先执行。</div><div class="line">CMD/SeaJS</div><div class="line">被依赖的模块会被预先加载，并不预先执行。</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/06/12/JavaScript模块加载器-requirejs/" class="archive-article-date">
+  	<time datetime="2016-06-12T07:49:33.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-06-12</time>
+</a>
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2016/06/12/JavaScript-面试题/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          面试题--js
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/06/12/JavaScript模块加载器-seajs/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">seajs</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+
+
+
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 yunkai
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: false,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/"
+	}
+</script>
+
+<script src="/./main.js"></script>
+
+
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
+    
+    
+      <li data-hook="tools-section-friends"><span class="text">友链</span><i class="icon-link"></i></li>
+    
+    
+      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+    				
+    			</div>
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-friends">
+  		
+  			<div class="friends-wrap" id="js-friends">
+  			
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接1</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接2</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接3</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接4</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接5</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接6</a>
+  	        
+  	        </div>
+  		
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-me">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>
