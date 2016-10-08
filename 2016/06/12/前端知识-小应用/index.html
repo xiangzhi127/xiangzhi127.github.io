@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>javascript小应用 | 我的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1、根据文本内容自动调整高度（textarea）123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&quot;en&quot;&amp;gt;&amp;lt;head&amp;g">
+<meta property="og:type" content="article">
+<meta property="og:title" content="javascript小应用">
+<meta property="og:url" content="http://xiangzhi127.github.io/2016/06/12/前端知识-小应用/index.html">
+<meta property="og:site_name" content="我的博客">
+<meta property="og:description" content="1、根据文本内容自动调整高度（textarea）123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&quot;en&quot;&amp;gt;&amp;lt;head&amp;g">
+<meta property="og:updated_time" content="2016-08-12T00:55:44.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="javascript小应用">
+<meta name="twitter:description" content="1、根据文本内容自动调整高度（textarea）123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html lang=&quot;en&quot;&amp;gt;&amp;lt;head&amp;g">
+  
+    <link rel="alternative" href="/atom.xml" title="我的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="//favicon.png">
+  
+  <script src="/style.js"></script>
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="null" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">yunkai</a></h1>
+		</hgroup>
+
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/随笔">随笔</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">友链</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="3" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="#" title="github">github</a>
+		        
+					<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+		        
+					<a class="rss" target="_blank" href="#" title="rss">rss</a>
+		        
+					<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-list"></i></div>
+  		<h1 class="header-author js-mobile-header hide">yunkai</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="null" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">yunkai</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/随笔">随笔</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        <article id="post-前端知识-小应用" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      javascript小应用
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1、根据文本内容自动调整高度（textarea）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=<span class="string">"en"</span>&gt;</div><div class="line">&lt;head&gt;</div><div class="line">	&lt;meta charset=<span class="string">"UTF-8"</span>&gt;</div><div class="line">	&lt;title&gt;根据文本内容自动调整高度（textarea）&lt;/title&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">	&lt;textarea name=<span class="string">""</span> id=<span class="string">""</span> cols=<span class="string">"30"</span> rows=<span class="string">"3"</span> data-adaptheight&gt;&lt;/textarea&gt;</div><div class="line">	&lt;script src=<span class="string">"http://apps.bdimg.com/libs/jquery/1.6.4/jquery.min.js"</span> <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;&lt;/script&gt;</div><div class="line">	&lt;script&gt;</div><div class="line">		(<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">			<span class="keyword">function</span> adjustHeight(textareaElement,minHeight)&#123;</div><div class="line">				//计算因边框和轮廓产生的高度差异</div><div class="line">				var outerHeight=parseInt(window.getComputedStyle(el).height,10);</div><div class="line">				var diff=outerHeight-el.clientHeight;</div><div class="line">				//设置高度为0以防需要收缩（高度）</div><div class="line">				el.style.height=0;</div><div class="line">				el.style.height=Math.max(minHeight,el.scrollHeight+diff)+<span class="string">'px'</span>;</div><div class="line">				&#125;</div><div class="line">				var textAreas=document.querySelectorAll(<span class="string">'textarea[data-adaptheight]'</span>);</div><div class="line">				<span class="keyword">for</span>(var i=0,l=textAreas.length;i&lt;l;i++)&#123;</div><div class="line">					var el=textAreas[i];</div><div class="line">					el.style.boxSizing=el.style.mozBoxSizing=<span class="string">'border-box'</span>;</div><div class="line">					el.style.overflowY=<span class="string">'hidden'</span>;</div><div class="line">					var minHeight=el.scrollHeight;</div><div class="line">					el.addEventListener(<span class="string">'input'</span>,<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">						adjustHeight(el,minHeight);</div><div class="line">					&#125;);</div><div class="line">					window.addEventListener(<span class="string">'resize'</span>,<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">						adjustHeight(el,minHeight);</div><div class="line">					&#125;);</div><div class="line">					adjustHeight(el,minHeight);</div><div class="line">				&#125;</div><div class="line">		&#125;)();</div><div class="line">		</div><div class="line">	&lt;/script&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div><div class="line">2、双括号演示</div><div class="line">``` bash</div><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=<span class="string">"en"</span>&gt;</div><div class="line">&lt;head&gt;</div><div class="line">	&lt;meta charset=<span class="string">"UTF-8"</span>&gt;</div><div class="line">	&lt;title&gt;双括号演示&lt;/title&gt;</div><div class="line">	&lt;style&gt;</div><div class="line">		a &#123;</div><div class="line">		 position: relative;</div><div class="line">		 display: inline-block;</div><div class="line">		 outline: none;</div><div class="line">		 text-decoration: none;</div><div class="line">		 color: <span class="comment">#000;</span></div><div class="line">		 font-size: 32px;</div><div class="line">		 padding: 5px 10px;</div><div class="line">		cursor:pointer;</div><div class="line">		&#125;</div><div class="line">		a::before, a::after &#123; position: absolute; &#125;</div><div class="line">		a::before &#123; content: <span class="string">"\5B"</span>; left: -20px; &#125;</div><div class="line">		a::after &#123; content: <span class="string">"\5D"</span>; right:  -20px; &#125;</div><div class="line">	&lt;/style&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">	&lt;h3&gt;双括号演示&lt;/h3&gt;</div><div class="line">	&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a&gt;点我&lt;/a&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
+<p>3、一行神奇的代码<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">(!(~+[])+&#123;&#125;)[--[~+<span class="string">""</span>][+[]]*[~+[]]+~~!+[]]+(&#123;&#125;+[])[[~!+[]]*~+[]]</div></pre></td></tr></table></figure></p>
+<p>4、HTML5 web通知API介绍<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line">	Google有问题，IE没测试。</div><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=<span class="string">"en"</span>&gt;</div><div class="line">&lt;head&gt;</div><div class="line">	&lt;meta charset=<span class="string">"UTF-8"</span>&gt;</div><div class="line">	&lt;title&gt;Document&lt;/title&gt;</div><div class="line">	&lt;style&gt;</div><div class="line">		</div><div class="line">	&lt;/style&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">	&lt;button id=<span class="string">"button"</span>&gt;请按我&lt;/button&gt;</div><div class="line">	&lt;script src=<span class="string">"http://apps.bdimg.com/libs/jquery/1.6.4/jquery.min.js"</span> <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;&lt;/script&gt;</div><div class="line">	&lt;script&gt;</div><div class="line">		document.addEventListener(<span class="string">'DOMContentLoaded'</span>,<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">			document.getElementById(<span class="string">'button'</span>).addEventListener(<span class="string">'click'</span>,<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">				<span class="keyword">if</span>(!(<span class="string">'Notification'</span> <span class="keyword">in</span> window))&#123;</div><div class="line">					console.log(<span class="string">'Sorry'</span>);</div><div class="line">					<span class="built_in">return</span>;</div><div class="line">				&#125;</div><div class="line">				Notification.requestPermission(<span class="keyword">function</span>(permission)&#123;</div><div class="line">					var config=&#123;</div><div class="line">						body:<span class="string">'111111111'</span>,</div><div class="line">						icon:<span class="string">'https://cdn2.iconfinder.com/data/icons/ios-7-style-metro-ui-icons/512/MetroUI_HTML5.png'</span>,</div><div class="line">						dir:<span class="string">'auto'</span></div><div class="line">					&#125;</div><div class="line">					var notification=new Notification(<span class="string">'Here I am'</span>,config);</div><div class="line">					<span class="built_in">set</span>Timeout(<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">						notification.close();</div><div class="line">					&#125;, 5000);</div><div class="line">				&#125;);</div><div class="line">			&#125;);</div><div class="line">		&#125;);</div><div class="line">	&lt;/script&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
+<p>5、file控件的样式改变<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=<span class="string">"en"</span>&gt;</div><div class="line">&lt;head&gt;</div><div class="line">	&lt;meta charset=<span class="string">"UTF-8"</span>&gt;</div><div class="line">	&lt;title&gt;Document&lt;/title&gt;</div><div class="line">	&lt;style&gt;</div><div class="line">		<span class="comment">#select-File&#123;position:absolute;right:0;top:0;font-size:300px;opacity: 0;filter:alpha(opacity=0);cursor:pointer;&#125;</span></div><div class="line">		.file-container&#123;position:relative;width:200px;height:80px;border:1px solid <span class="comment">#ccc;overflow:hidden;cursor:pointer;line-height: 80px;</span></div><div class="line">			text-align:center;color:<span class="comment">#fff;background: #f50;border-radius:4px;</span></div><div class="line">		&#125;</div><div class="line">	&lt;/style&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">	&lt;div class=<span class="string">"file-container"</span>&gt;&lt;input <span class="built_in">type</span>=<span class="string">"file"</span> id=<span class="string">"select-File"</span>&gt;选择文件&lt;/div&gt;</div><div class="line">	&lt;script src=<span class="string">"http://apps.bdimg.com/libs/jquery/1.6.4/jquery.min.js"</span> <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;&lt;/script&gt;</div><div class="line">	&lt;script&gt;</div><div class="line">		</div><div class="line">	&lt;/script&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
+<p>6、实现json数据可视化<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=<span class="string">"en"</span>&gt;</div><div class="line">&lt;head&gt;</div><div class="line">	&lt;meta charset=<span class="string">"UTF-8"</span>&gt;</div><div class="line">	&lt;title&gt;Document&lt;/title&gt;</div><div class="line">	&lt;style&gt;</div><div class="line">		</div><div class="line">	&lt;/style&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">	&lt;script src=<span class="string">"http://apps.bdimg.com/libs/jquery/1.6.4/jquery.min.js"</span> <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;&lt;/script&gt;</div><div class="line">	&lt;script&gt;</div><div class="line">		<span class="keyword">function</span> output(inp)&#123;</div><div class="line">			document.body.appendChild(document.createElement(<span class="string">'pre'</span>)).innerHTML=inp;</div><div class="line">		&#125;</div><div class="line">		<span class="keyword">function</span> syntaxHighlight(json) &#123;</div><div class="line">		 	json = json.replace(/&amp;/g, <span class="string">'&amp;amp;'</span>).replace(/&lt;/g, <span class="string">'&amp;lt;'</span>).replace(/&gt;/g, <span class="string">'&amp;gt;'</span>);</div><div class="line">		 	<span class="built_in">return</span> json.replace(/(<span class="string">"(\\u[a-zA-Z0-9]&#123;4&#125;|\\[^u]|[^\\"</span>])*<span class="string">"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function (match) &#123;</span></div><div class="line">		     var cls = 'number';</div><div class="line">		     if (/^"/.test(match)) &#123;</div><div class="line">		         <span class="keyword">if</span> (/:$/.test(match)) &#123;</div><div class="line">		             cls = <span class="string">'key'</span>;</div><div class="line">		         &#125; <span class="keyword">else</span> &#123;</div><div class="line">		             cls = <span class="string">'string'</span>;</div><div class="line">		         &#125;</div><div class="line">		     &#125; <span class="keyword">else</span> <span class="keyword">if</span> (/<span class="literal">true</span>|<span class="literal">false</span>/.test(match)) &#123;</div><div class="line">		         cls = <span class="string">'boolean'</span>;</div><div class="line">		     &#125; <span class="keyword">else</span> <span class="keyword">if</span> (/null/.test(match)) &#123;</div><div class="line">		         cls = <span class="string">'null'</span>;</div><div class="line">		     &#125;</div><div class="line">		     <span class="built_in">return</span> <span class="string">'&lt;span class="'</span> + cls + <span class="string">'"&gt;'</span> + match + <span class="string">'&lt;/span&gt;'</span>;</div><div class="line">		 &#125;);</div><div class="line">		&#125;</div><div class="line">		var obj = &#123;</div><div class="line">		 num: 1234,</div><div class="line">		 str: <span class="string">'字符串'</span>,</div><div class="line">		 arr: [1,2,3,4,5,6],</div><div class="line">		 obj: &#123;</div><div class="line">		     name: <span class="string">'tom'</span>,</div><div class="line">		     age: 10,</div><div class="line">		     like: [<span class="string">'a'</span>, <span class="string">'b'</span>]</div><div class="line">		 &#125;</div><div class="line">		&#125;;</div><div class="line">		var str = JSON.stringify(obj, undefined, 4);</div><div class="line"></div><div class="line">		output(syntaxHighlight(str));</div><div class="line">	&lt;/script&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/06/12/前端知识-小应用/" class="archive-article-date">
+  	<time datetime="2016-06-12T07:49:33.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-06-12</time>
+</a>
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2016/06/12/html-面试题/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          html面试题
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/06/12/前端知识-汇总1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">前端知识点汇总1</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+
+
+
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 yunkai
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: false,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/"
+	}
+</script>
+
+<script src="/./main.js"></script>
+
+
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
+    
+    
+      <li data-hook="tools-section-friends"><span class="text">友链</span><i class="icon-link"></i></li>
+    
+    
+      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+    				<a href="/tags/css/" style="font-size: 20px;">css</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/移动端/" style="font-size: 10px;">移动端</a>
+    			</div>
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-friends">
+  		
+  			<div class="friends-wrap" id="js-friends">
+  			
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接1</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接2</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接3</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接4</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接5</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接6</a>
+  	        
+  	        </div>
+  		
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-me">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>

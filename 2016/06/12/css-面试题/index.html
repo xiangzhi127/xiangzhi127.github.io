@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>面试题-css | 我的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="、css规则的组成？每个规则都有两个基本部分：选择器和声明块。其中声明块有一个或多个声明组成。每个声明由一个键值对组成。
+、页面导入样式时，使用link和@import有什么区别？方式1：使用HTML标签的style属性方式2：将样式代码写在页面…标签之中方式3：使用link标签，引入外部CSS文件方式4：使用@import引入CSS文件（不建议使用）注意：内嵌样式与link外联样式，要注意它们的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="面试题-css">
+<meta property="og:url" content="http://xiangzhi127.github.io/2016/06/12/css-面试题/index.html">
+<meta property="og:site_name" content="我的博客">
+<meta property="og:description" content="、css规则的组成？每个规则都有两个基本部分：选择器和声明块。其中声明块有一个或多个声明组成。每个声明由一个键值对组成。
+、页面导入样式时，使用link和@import有什么区别？方式1：使用HTML标签的style属性方式2：将样式代码写在页面…标签之中方式3：使用link标签，引入外部CSS文件方式4：使用@import引入CSS文件（不建议使用）注意：内嵌样式与link外联样式，要注意它们的">
+<meta property="og:updated_time" content="2016-10-08T02:04:37.981Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="面试题-css">
+<meta name="twitter:description" content="、css规则的组成？每个规则都有两个基本部分：选择器和声明块。其中声明块有一个或多个声明组成。每个声明由一个键值对组成。
+、页面导入样式时，使用link和@import有什么区别？方式1：使用HTML标签的style属性方式2：将样式代码写在页面…标签之中方式3：使用link标签，引入外部CSS文件方式4：使用@import引入CSS文件（不建议使用）注意：内嵌样式与link外联样式，要注意它们的">
+  
+    <link rel="alternative" href="/atom.xml" title="我的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="//favicon.png">
+  
+  <script src="/style.js"></script>
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="null" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">yunkai</a></h1>
+		</hgroup>
+
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/随笔">随笔</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">友链</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="3" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="#" title="github">github</a>
+		        
+					<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+		        
+					<a class="rss" target="_blank" href="#" title="rss">rss</a>
+		        
+					<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-list"></i></div>
+  		<h1 class="header-author js-mobile-header hide">yunkai</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="null" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">yunkai</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/随笔">随笔</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        <article id="post-css-面试题" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      面试题-css
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>、css规则的组成？<br>每个规则都有两个基本部分：选择器和声明块。其中声明块有一个或多个声明组成。每个声明由一个键值对组成。</p>
+<p>、页面导入样式时，使用link和@import有什么区别？<br>方式1：使用HTML标签的style属性<br>方式2：将样式代码写在页面<style>…</style>标签之中<br>方式3：使用link标签，引入外部CSS文件<br>方式4：使用@import引入CSS文件（不建议使用）<br>注意：内嵌样式与link外联样式，要注意它们的位置关系，谁在后面谁的优先级高</p>
+<p>、css选择符有哪些？<br>id选择器（#）<br>类选择器（点）<br>标签选择器（标签）<br>属性选择器（[]）<br>相邻选择器（+）<br>子选择器（&gt;）<br>后代选择器（空格）<br>伪类选择器（单冒号）</p>
+<p>、css属性有哪些是可以继承的？<br>文字、颜色、字体</p>
+<p>、css权重怎样计算？<br>    内联声明：1000<br>    id属性：100<br>    class属性、属性选择、伪类：10<br>    标签、伪元素：1<br>    结合符和通配选择器：贡献度为0</p>
+<p>、css reset的作用？<br>浏览器的品种不同，样式不同，然后重置，让他们统一</p>
+<p>、浏览器是怎样解析CSS选择器的？<br>引擎解析 CSS 选择器时从右往左解析，这涉及到底层算法的问题。</p>
+<p>、在网页中的应该使用奇数还是偶数的字体？为什么呢？</p>
+<p>、清除浮动的几种方式？它们各自的优缺点？<br>（1）clear:both<br>（2）.clearfix:after（伪元素）<br>（3）设置BFC/haslayout</p>
+<p>、css hack技巧有哪些？<br>（1）属性级Hack：比如IE6能识别下划线”<em>”和星号” <em> “，IE7能识别星号” </em> “，但不能识别下划线”</em>”，而firefox两个都不能认识。</p>
+<p>（2）选择符级Hack：比如IE6能识别<em>html .class{}，IE7能识别</em>+html .class{}或者*:first-child+html .class{}。</p>
+<p>（3）IE条件注释Hack：IE条件注释是微软从IE5开始就提供的一种非标准逻辑语句。比如针对所有IE：&lt; !–[if IE]&gt;&lt; !–您的代码–&gt;&lt; ![endif]–&gt;，针对IE6及以下版本：&lt; !–[if lt IE 7]&gt;&lt; !–您的代码–&gt;&lt; ![endif]–&gt;，这类Hack不仅对CSS生效，对写在判断语句里面的所有代码都 会生效<br>、css模型盒？<br>content+padding+border+margin<br>、css层叠？</p>
+<p>、你知道css浏览器兼容问题又哪些？</p>
+<p>、css隐藏元素的几种方法？<br>（1）display:none<br>（2）visible:hidden<br>（3）透明度</p>
+<p>、css居中（包括水平居中和垂直居中）<br>（1）margin:auto<br>（2）position:absolute与margin的结合</p>
+<p>、用纯CSS创建一个三角形的原理是什么？</p>
+<p>、css3有哪些新特性<br>圆角：border-radius<br>阴影：border-shadow<br>文字特效：text-shadow<br>线性渐变：gradient<br>旋转：transform</p>
+<p>、CSS3新增伪类有那些？<br>first-of-type<br>last-of-type<br>only-of-type<br>only-child<br>nth-child<br>enabled<br>disabled<br>checked<br>、请解释一下CSS3的Flexbox（弹性盒布局模型）,以及适用场景？<br>（1）移动端最适合不过</p>
+<p>、如何居中div？如何居中一个浮动元素？如何让绝对定位的div居中？</p>
+<p>、px和em的区别？<br>px：绝对单位<br>em：相对于父元素的font-size大小进行计算</p>
+<p>、display有哪些值？说明他们的作用。<br>block、none、</p>
+<p>、position的值relative和absolute定位原点是？<br>reletive：相对于自己<br>absolute：找到祖先元素设置position:absolute、relative、fixed进行定位</p>
+<p>、absolute的containing block(容器块)计算方式跟正常流有什么不同？</p>
+<p>、position:absolute的理解？<br>当给元素设置absolute的时候，它会往上查找absolute元素的第一个父元素，如果该父元素的position值存在（且不为static），那么就是根据该父元素进行定位的，否则将会继续查找该父元素的父元素，一直追溯到某个父元素具备不为static的position值为止，如果不存在满足条件的父元素，则会根据最外层的window进行定位。</p>
+<p>、CSS里的visibility属性有个collapse属性值是干嘛用的？在不同浏览器下以后什么区别？</p>
+<p>、position跟display、margin collapse、overflow、float这些特性相互叠加后会怎么样？</p>
+<p>、对BFC规范(块级格式化上下文：block formatting context)的理解？</p>
+<p>、margin和padding分别适合什么场景使用？</p>
+<p>、元素竖向的百分比设定是相对于容器的高度吗？</p>
+<p>、全屏滚动的原理是什么？用到了CSS的那些属性？</p>
+<p>、什么是响应式设计？响应式设计的基本原理是什么？如何兼容低版本的IE？</p>
+<p>、::before 和 ::after中双冒号和单冒号 有什么区别？解释一下这2个伪元素的作用。</p>
+<p>、你对line-height是如何理解的？</p>
+<p>、设置元素浮动后，该元素的display值是多少？<br>block</p>
+<p>、怎么让Chrome支持小于12px 的文字？<br>-webkit-text-size-adjust:none;</p>
+<p>、让页面里的字体变清晰，变细用CSS怎么做？<br>-webkit-font-smoothing</p>
+<p>、font-style属性可以让它赋值为“oblique” oblique是什么意思？</p>
+<p>、position:fixed;在android下无效怎么处理？</p>
+<p>、如果需要手动写动画，你认为最小时间间隔是多久，为什么？<br>多数显示器默认频率是60Hz，即1秒刷新60次，所以理论上最小间隔为1/60＊1000ms ＝ 16.7ms</p>
+<p>、display:inline-block 会显示间隙,怎样去掉？<br>font-size:0、写成一行</p>
+<p>、overflow: scroll时不能平滑滚动的问题怎么处理？</p>
+<p>、@font-face的兼容写法？<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">@font-face &#123;</div><div class="line">   font-family: <span class="string">"xiangle"</span>;</div><div class="line">    src: url(<span class="string">"../fonts/xiangle.eot?#iefix"</span>) format(<span class="string">"embedded-opentype"</span>)</div><div class="line">        ,url(<span class="string">"../fonts/xiangle.woff"</span>) format(<span class="string">"woff"</span>)</div><div class="line">        ,url(<span class="string">"../fonts/xiangle.ttf"</span>) format(<span class="string">"truetype"</span>)</div><div class="line">        ,url(<span class="string">"../fonts/xiangle.svg"</span>) format(<span class="string">"svg"</span>);</div><div class="line">    font-style: normal;</div><div class="line">    font-weight: normal;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>、css pixels和Device pixels有何区别？<br>css pixels:浏览器使用的抽象单位，主要用来在网页上绘制内容。<br>Device pixels:显示屏幕的最小物理单位，每个dp包含自己的颜色、亮度。<br>关系：1 css pixels=(devicePixelRatio)^2 Device pixels</p>
+<p>、实现不使用 border 画出1px高的线，在不同浏览器的标准模式与怪异模式下都能保持一致的效果</p>
+<p>、li与li之间有看不见的空白间隔是什么原因引起的？有什么解决办法？</p>
+<p>、有一个高度自适应的div，里面有两个div，一个高度100px，希望另一个填满剩下的高度？</p>
+<p>、png、jpg、gif 这些图片格式解释一下，分别什么时候用。有没有了解过webp？</p>
+<p>、style标签写在body后与body前有什么区别？</p>
+<p>、什么是CSS 预处理器 / 后处理器？</p>
+<p>、CSS优化、提高性能的方法有哪些？</p>
+<p>、如何用css实现一个元素footer一直贴在浏览器底部（前提是内容不够多时）<br>方法1：</p>
+<p>、css隐藏元素的几种方法<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">1、display:none;</div><div class="line">元素在页面上彻底消失，元素本来占有的空间就会被其他元素占有，会导致浏览器的重排和重绘。</div><div class="line">2、visibilty:hidden;</div><div class="line">元素在页面消失后，其占据的空间依旧保留，所以它只会导致浏览器重绘而不会重排。</div><div class="line">3、opacity:0;</div><div class="line">这只能说是在用户眼中是隐藏的，但是还能触发绑定的click事件的。</div></pre></td></tr></table></figure></p>
+<p>、字体类型font-family？</p>
+<p>、border的用法？</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/06/12/css-面试题/" class="archive-article-date">
+  	<time datetime="2016-06-12T07:49:33.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-06-12</time>
+</a>
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2016/06/12/css-命名建议/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          css命名建议
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/06/12/css属性-float/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">css属性-float</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+
+
+
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 yunkai
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: false,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/"
+	}
+</script>
+
+<script src="/./main.js"></script>
+
+
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
+    
+    
+      <li data-hook="tools-section-friends"><span class="text">友链</span><i class="icon-link"></i></li>
+    
+    
+      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+    				<a href="/tags/css/" style="font-size: 20px;">css</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/移动端/" style="font-size: 10px;">移动端</a>
+    			</div>
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-friends">
+  		
+  			<div class="friends-wrap" id="js-friends">
+  			
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接1</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接2</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接3</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接4</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接5</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接6</a>
+  	        
+  	        </div>
+  		
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-me">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>

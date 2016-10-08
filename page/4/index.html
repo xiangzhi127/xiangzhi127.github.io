@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>我的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="我的博客">
+<meta property="og:url" content="http://xiangzhi127.github.io/page/4/index.html">
+<meta property="og:site_name" content="我的博客">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="我的博客">
+  
+    <link rel="alternative" href="/atom.xml" title="我的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="//favicon.png">
+  
+  <script src="/style.js"></script>
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="null" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">yunkai</a></h1>
+		</hgroup>
+
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/随笔">随笔</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">友链</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="3" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="#" title="github">github</a>
+		        
+					<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+		        
+					<a class="rss" target="_blank" href="#" title="rss">rss</a>
+		        
+					<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-list"></i></div>
+  		<h1 class="header-author js-mobile-header hide">yunkai</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="null" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">yunkai</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/随笔">随笔</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        
+  
+    <article id="post-JavaScript-2数据类型" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/12/JavaScript-2数据类型/">JavaScript-数据类型</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>ECMAScript中有5种简单数据类型：Undefined、Null、Boolean、Number和String。还有一种复杂数据类型——Object。<br>1、typeof操作符<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">typeof操作符是用来检测变量的数据类型。</div></pre></td></tr></table></figure></p>
+<p>2、标识符<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">所谓标识符，就是指变量、函数、属性的名字，或者函数的参数。</div><div class="line">标识符可以是下列格式规则组合起来的一或多个字符：</div><div class="line">1、第一字符必须是一个字母、下划线(_)或一个美元符号($)。</div><div class="line">2、其他字符可以是字母、下划线、美元符号或数字。</div><div class="line">3、不能把关键字、保留字、<span class="literal">true</span>、<span class="literal">false</span>和null作为标识符。</div></pre></td></tr></table></figure></p>
+<p>3、注释<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">ECMAScript使用C风格的注释，包括单行注释和块级注释。</div><div class="line">1、// 单行注释</div><div class="line">2、/*</div><div class="line">	* 这是一个多行</div><div class="line">	* 注释</div><div class="line">	*/</div></pre></td></tr></table></figure></p>
+<p>4、直接量(字面量literal)<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">所有直接量(字面量)，就是程序中直接显示出来的数据值。</div><div class="line">1、数字字面量</div><div class="line">2、字符串字面量</div><div class="line">3、布尔值字面量</div><div class="line">4、对象字面量</div><div class="line">5、正则表达式字面量</div><div class="line">6、对象字面量表达式</div><div class="line">7、数组字面量表达式</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/06/12/JavaScript-2数据类型/" class="archive-article-date">
+  	<time datetime="2016-06-12T07:49:33.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-06-12</time>
+</a>
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-css-命名建议" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/12/css-命名建议/">css命名建议</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1、css命名建议<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div></pre></td><td class="code"><pre><div class="line">头：header</div><div class="line">内容：content/container</div><div class="line">尾：footer</div><div class="line">导航：nav</div><div class="line">侧栏：sidebar</div><div class="line">栏目：column</div><div class="line">页面外围控制整体佈局宽度：wrapper</div><div class="line">左右中：left right center</div><div class="line">登录条：loginbar</div><div class="line">标志：logo</div><div class="line">广告：banner</div><div class="line">页面主体：main</div><div class="line">热点：hot</div><div class="line">新闻：news</div><div class="line">下载：download</div><div class="line">子导航：subnav</div><div class="line">菜单：menu</div><div class="line">子菜单：submenu</div><div class="line">搜索：search</div><div class="line">友情链接：friendlink</div><div class="line">页脚：footer</div><div class="line">版权：copyright</div><div class="line">滚动：scroll</div><div class="line">内容：content</div><div class="line">标签：tags</div><div class="line">文章列表：list</div><div class="line">提示信息：msg</div><div class="line">小技巧：tips</div><div class="line">栏目标题：title</div><div class="line">加入：joinus</div><div class="line">指南：guide</div><div class="line">服务：service</div><div class="line">注册：regsiter</div><div class="line">状态：status</div><div class="line">投票：vote</div><div class="line">合作伙伴：partner</div><div class="line">导航：nav</div><div class="line">主导航：mainnav</div><div class="line">子导航：subnav</div><div class="line">顶导航：topnav</div><div class="line">边导航：sidebar</div><div class="line">左导航：leftsidebar</div><div class="line">右导航：rightsidebar</div><div class="line">菜单：menu</div><div class="line">子菜单：submenu</div><div class="line">标题: title</div><div class="line">摘要: summary</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/06/12/css-命名建议/" class="archive-article-date">
+  	<time datetime="2016-06-12T07:49:33.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-06-12</time>
+</a>
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-css-面试题" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/12/css-面试题/">面试题-css</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>、css规则的组成？<br>每个规则都有两个基本部分：选择器和声明块。其中声明块有一个或多个声明组成。每个声明由一个键值对组成。</p>
+<p>、页面导入样式时，使用link和@import有什么区别？<br>方式1：使用HTML标签的style属性<br>方式2：将样式代码写在页面<style>…</style>标签之中<br>方式3：使用link标签，引入外部CSS文件<br>方式4：使用@import引入CSS文件（不建议使用）<br>注意：内嵌样式与link外联样式，要注意它们的位置关系，谁在后面谁的优先级高</p>
+<p>、css选择符有哪些？<br>id选择器（#）<br>类选择器（点）<br>标签选择器（标签）<br>属性选择器（[]）<br>相邻选择器（+）<br>子选择器（&gt;）<br>后代选择器（空格）<br>伪类选择器（单冒号）</p>
+<p>、css属性有哪些是可以继承的？<br>文字、颜色、字体</p>
+<p>、css权重怎样计算？<br>    内联声明：1000<br>    id属性：100<br>    class属性、属性选择、伪类：10<br>    标签、伪元素：1<br>    结合符和通配选择器：贡献度为0</p>
+<p>、css reset的作用？<br>浏览器的品种不同，样式不同，然后重置，让他们统一</p>
+<p>、浏览器是怎样解析CSS选择器的？<br>引擎解析 CSS 选择器时从右往左解析，这涉及到底层算法的问题。</p>
+<p>、在网页中的应该使用奇数还是偶数的字体？为什么呢？</p>
+<p>、清除浮动的几种方式？它们各自的优缺点？<br>（1）clear:both<br>（2）.clearfix:after（伪元素）<br>（3）设置BFC/haslayout</p>
+<p>、css hack技巧有哪些？<br>（1）属性级Hack：比如IE6能识别下划线”<em>”和星号” <em> “，IE7能识别星号” </em> “，但不能识别下划线”</em>”，而firefox两个都不能认识。</p>
+<p>（2）选择符级Hack：比如IE6能识别<em>html .class{}，IE7能识别</em>+html .class{}或者*:first-child+html .class{}。</p>
+<p>（3）IE条件注释Hack：IE条件注释是微软从IE5开始就提供的一种非标准逻辑语句。比如针对所有IE：&lt; !–[if IE]&gt;&lt; !–您的代码–&gt;&lt; ![endif]–&gt;，针对IE6及以下版本：&lt; !–[if lt IE 7]&gt;&lt; !–您的代码–&gt;&lt; ![endif]–&gt;，这类Hack不仅对CSS生效，对写在判断语句里面的所有代码都 会生效<br>、css模型盒？<br>content+padding+border+margin<br>、css层叠？</p>
+<p>、你知道css浏览器兼容问题又哪些？</p>
+<p>、css隐藏元素的几种方法？<br>（1）display:none<br>（2）visible:hidden<br>（3）透明度</p>
+<p>、css居中（包括水平居中和垂直居中）<br>（1）margin:auto<br>（2）position:absolute与margin的结合</p>
+<p>、用纯CSS创建一个三角形的原理是什么？</p>
+<p>、css3有哪些新特性<br>圆角：border-radius<br>阴影：border-shadow<br>文字特效：text-shadow<br>线性渐变：gradient<br>旋转：transform</p>
+<p>、CSS3新增伪类有那些？<br>first-of-type<br>last-of-type<br>only-of-type<br>only-child<br>nth-child<br>enabled<br>disabled<br>checked<br>、请解释一下CSS3的Flexbox（弹性盒布局模型）,以及适用场景？<br>（1）移动端最适合不过</p>
+<p>、如何居中div？如何居中一个浮动元素？如何让绝对定位的div居中？</p>
+<p>、px和em的区别？<br>px：绝对单位<br>em：相对于父元素的font-size大小进行计算</p>
+<p>、display有哪些值？说明他们的作用。<br>block、none、</p>
+<p>、position的值relative和absolute定位原点是？<br>reletive：相对于自己<br>absolute：找到祖先元素设置position:absolute、relative、fixed进行定位</p>
+<p>、absolute的containing block(容器块)计算方式跟正常流有什么不同？</p>
+<p>、position:absolute的理解？<br>当给元素设置absolute的时候，它会往上查找absolute元素的第一个父元素，如果该父元素的position值存在（且不为static），那么就是根据该父元素进行定位的，否则将会继续查找该父元素的父元素，一直追溯到某个父元素具备不为static的position值为止，如果不存在满足条件的父元素，则会根据最外层的window进行定位。</p>
+<p>、CSS里的visibility属性有个collapse属性值是干嘛用的？在不同浏览器下以后什么区别？</p>
+<p>、position跟display、margin collapse、overflow、float这些特性相互叠加后会怎么样？</p>
+<p>、对BFC规范(块级格式化上下文：block formatting context)的理解？</p>
+<p>、margin和padding分别适合什么场景使用？</p>
+<p>、元素竖向的百分比设定是相对于容器的高度吗？</p>
+<p>、全屏滚动的原理是什么？用到了CSS的那些属性？</p>
+<p>、什么是响应式设计？响应式设计的基本原理是什么？如何兼容低版本的IE？</p>
+<p>、::before 和 ::after中双冒号和单冒号 有什么区别？解释一下这2个伪元素的作用。</p>
+<p>、你对line-height是如何理解的？</p>
+<p>、设置元素浮动后，该元素的display值是多少？<br>block</p>
+<p>、怎么让Chrome支持小于12px 的文字？<br>-webkit-text-size-adjust:none;</p>
+<p>、让页面里的字体变清晰，变细用CSS怎么做？<br>-webkit-font-smoothing</p>
+<p>、font-style属性可以让它赋值为“oblique” oblique是什么意思？</p>
+<p>、position:fixed;在android下无效怎么处理？</p>
+<p>、如果需要手动写动画，你认为最小时间间隔是多久，为什么？<br>多数显示器默认频率是60Hz，即1秒刷新60次，所以理论上最小间隔为1/60＊1000ms ＝ 16.7ms</p>
+<p>、display:inline-block 会显示间隙,怎样去掉？<br>font-size:0、写成一行</p>
+<p>、overflow: scroll时不能平滑滚动的问题怎么处理？</p>
+<p>、@font-face的兼容写法？<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">@font-face &#123;</div><div class="line">   font-family: <span class="string">"xiangle"</span>;</div><div class="line">    src: url(<span class="string">"../fonts/xiangle.eot?#iefix"</span>) format(<span class="string">"embedded-opentype"</span>)</div><div class="line">        ,url(<span class="string">"../fonts/xiangle.woff"</span>) format(<span class="string">"woff"</span>)</div><div class="line">        ,url(<span class="string">"../fonts/xiangle.ttf"</span>) format(<span class="string">"truetype"</span>)</div><div class="line">        ,url(<span class="string">"../fonts/xiangle.svg"</span>) format(<span class="string">"svg"</span>);</div><div class="line">    font-style: normal;</div><div class="line">    font-weight: normal;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>、css pixels和Device pixels有何区别？<br>css pixels:浏览器使用的抽象单位，主要用来在网页上绘制内容。<br>Device pixels:显示屏幕的最小物理单位，每个dp包含自己的颜色、亮度。<br>关系：1 css pixels=(devicePixelRatio)^2 Device pixels</p>
+<p>、实现不使用 border 画出1px高的线，在不同浏览器的标准模式与怪异模式下都能保持一致的效果</p>
+<p>、li与li之间有看不见的空白间隔是什么原因引起的？有什么解决办法？</p>
+<p>、有一个高度自适应的div，里面有两个div，一个高度100px，希望另一个填满剩下的高度？</p>
+<p>、png、jpg、gif 这些图片格式解释一下，分别什么时候用。有没有了解过webp？</p>
+<p>、style标签写在body后与body前有什么区别？</p>
+<p>、什么是CSS 预处理器 / 后处理器？</p>
+<p>、CSS优化、提高性能的方法有哪些？</p>
+<p>、如何用css实现一个元素footer一直贴在浏览器底部（前提是内容不够多时）<br>方法1：</p>
+<p>、css隐藏元素的几种方法<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">1、display:none;</div><div class="line">元素在页面上彻底消失，元素本来占有的空间就会被其他元素占有，会导致浏览器的重排和重绘。</div><div class="line">2、visibilty:hidden;</div><div class="line">元素在页面消失后，其占据的空间依旧保留，所以它只会导致浏览器重绘而不会重排。</div><div class="line">3、opacity:0;</div><div class="line">这只能说是在用户眼中是隐藏的，但是还能触发绑定的click事件的。</div></pre></td></tr></table></figure></p>
+<p>、字体类型font-family？</p>
+<p>、border的用法？</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/06/12/css-面试题/" class="archive-article-date">
+  	<time datetime="2016-06-12T07:49:33.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-06-12</time>
+</a>
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-css属性-float" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/12/css属性-float/">css属性-float</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>float最初的初衷是为了实现文字环绕效果。JavaScript 语法： object.style.cssFloat=”left”。</p>
+<p>float具有破坏性，但它的破坏性只是为了实现环绕的效果而已。flaot具有破坏性是指：浮动后的浮动元素会使父元素的高度塌陷，并且造成紧密排列特性（去空格）。那么解决这个问题的方法有:<br>（1）父元素设置固定高度<br>（2）父元素设置overflow:auto;</p>
+<p>float具有包裹性：某个元素被设置float属性后，这个元素会生成一个块级框，而不论它本身是何种元素。<br>(假如这个元素是行内标签，本来是不可以设置宽高的，float后，变成了块级元素，这样就可以设置它的宽高了。)<br>假如在一行之上只有极少的空间可供浮动元素，那么这个元素会跳至下一行，这个过程会持续到某一行拥有足够的空间为止。</p>
+<p>清除浮动带来的影响：<br>（1）clear:both;这个只适合于block水平元素，对于行内元素不起作用的(对于外层使用clear:both;会清除元素的跟随性，但是父元素高度塌陷还是没有解决。<br>所以：clear:both建议使用在内层。)。<br>（2）伪元素清除,用于父元素上。（只适合于外层）<br>清除浮动的css代码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">.clearfix:after&#123;</div><div class="line">	content:<span class="string">''</span>;</div><div class="line">	display:block;</div><div class="line">	height:0;</div><div class="line">	overflow:hidden;</div><div class="line">	clear:both;</div><div class="line">&#125;</div><div class="line">.clearfix&#123;*zoom:1;&#125;</div><div class="line">/*或者*/</div><div class="line">.clearfix:after&#123;</div><div class="line">	content:<span class="string">''</span>;</div><div class="line">	display:table;</div><div class="line">	clear:both;</div><div class="line">&#125;</div><div class="line">.clearfix&#123;*zoom:1;&#125;</div></pre></td></tr></table></figure></p>
+<p>（3）BFC/haslayout(用于外层的)<br>父元素设置为BFC/haslayout。<br>BFC/haslayout通常声明：<br>（1）float:left/right;<br>（2）position:absolute/fixed<br>（3）overflow:hidden/scroll/auto<br>（4）display:inline-block/table-cell<br>（5）width/height/zoom:1<br>3列布局：<br>float:left；<br>float:right;<br>text-align:center;<br>2列布局，一侧固定，另一侧自适应：<br>float:left;<br>margin-left;<br>自适应布局(固定布局写法)：<br>float:left;<br>display: table-cell; <em>display: inline-block; width: 2000px; </em>width: auto;</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/06/12/css属性-float/" class="archive-article-date">
+  	<time datetime="2016-06-12T07:49:33.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-06-12</time>
+</a>
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-css属性-margin" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/12/css属性-margin/">css属性-margin</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>有什么条件导致margin是无效的？？<br>（1）</p>
+<p>margin的特性1：margin可以改变元素的尺寸,但必须满足一些前提条件：<br>（1）使用于没有设定width/height的普通block水平元素。（float、absolute、fixed都可以让元素变成block，但不是普通元素了）<br>（2）只适合用于水平方向尺寸（即只可以改变水平方向的长度）<br>应用：滚动容器内上下留白。<br>margin设置为百分比后：<br>普通元素的百分比margin都是相对于容器的宽度计算的。<br>绝对定位元素的百分比margin是相对于第一个定位祖先元素（relative/absolute/fixed）的宽度计算的<br>应用：高2:1自适应矩形<br>父：{<br>    overflow：hidden；<br>}<br>子：{<br>    margin:50%;<br>}<br>margin重叠：<br>margin重叠通常特性：<br>1、block水平元素（不包括float和absolute元素）<br>2、不考虑writing-mode,值发生在垂直方向（margin-top/margin-bottom）<br>margin重叠3种情景：<br>1、相邻的兄弟元素<br>2、父级和第一个/最后一个子元素<br>3、空的block元素<br>margin-top重叠条件（指第2中情景）：<br>1、父元素非块状格式化上下文元素<br>2、父元素没有border-top设置<br>3、父元素没有padding-top值<br>4、父元素和第一个子元素之间没有inline元素分割<br>干掉margin-top：<br>1、父：{overflow：hidden}<br>2、父：{border:1px solid #ccc}<br>3、父：{padding:10px}<br>4、之间插入inline元素：比如&nbsp;<br>margin-bottom重叠条件（指第2种情景）：<br>1、父元素非块状格式化上下文元素<br>2、父元素没有border-top设置<br>3、父元素没有padding-top值<br>4、父元素和第一个子元素之间没有inline元素分割<br>5、父元素没有height，min-height，max-height限制。<br>干掉margin-bottom：<br>1、父：{overflow：hidden}<br>2、父：{border:1px solid #ccc}<br>3、父：{padding:10px}<br>4、之间插入inline元素：比如&nbsp;<br>5、加个height<br>空block元素重叠条件：<br>1、元素没有border设置<br>2、元素没有padding值<br>3、里面没有inline元素<br>4、没有height、或者min-height<br>干掉空block元素重叠：按照上面的规则来就行。<br>重点知识，margin:auto<br>absolute与margin实现垂直居中<br>父：{height:200px;position:relative;}<br>子：{position:absolute;top:0;right:0;bottom:0;left:0;<br>width:500px;height:100px;margin:0 auto;}<br>margin负值定位：<br>1、margin负值下的两端对齐<br>margin-start:<br>正常的流向，margin-start等同于margin-left,两者重叠不累加。<br>如果水平流是从右往左，margin-start等同于margin-right。<br>在垂直留下（writing-mode:vertical-*;）,margin-start等同于margin-top。</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/06/12/css属性-margin/" class="archive-article-date">
+  	<time datetime="2016-06-12T07:49:33.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-06-12</time>
+</a>
+      
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/page/3/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/5/">Next &raquo;</a>
+    </nav>
+  
+
+
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 yunkai
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: false,
+		animate: true,
+		isHome: true,
+		isPost: false,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/"
+	}
+</script>
+
+<script src="/./main.js"></script>
+
+
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
+    
+    
+      <li data-hook="tools-section-friends"><span class="text">友链</span><i class="icon-link"></i></li>
+    
+    
+      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+    				<a href="/tags/css/" style="font-size: 20px;">css</a> <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/移动端/" style="font-size: 10px;">移动端</a>
+    			</div>
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-friends">
+  		
+  			<div class="friends-wrap" id="js-friends">
+  			
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接1</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接2</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接3</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接4</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接5</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接6</a>
+  	        
+  	        </div>
+  		
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-me">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>
